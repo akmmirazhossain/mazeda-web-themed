@@ -86,7 +86,7 @@ function Navbar() {
                 onClick={toggleMenu}
                 className="p-2  hover:text-deep-purple-accent-400 focus:outline-none focus:text-deep-purple-accent-400"
               >
-                <FontAwesomeIcon icon={faBars} />
+                <FontAwesomeIcon className="text-lg" icon={faBars} />
               </button>
             </div>
           </div>
