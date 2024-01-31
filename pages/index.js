@@ -9,13 +9,13 @@ import StrengthSection from "./components/StrengthSection";
 import ClientsSection from "./components/ClientsSection";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import theme from "./config/theme";
+import theme from "../config/theme";
 
 function Home() {
   return (
     <>
       <Navbar />
-      <main class="container mx-auto light-theme max-w-7xl">
+      <main className="container mx-auto light-theme max-w-7xl">
         <HeroSection />
         <ServicesSection />
         <LinksSection />
@@ -24,7 +24,7 @@ function Home() {
         <StrengthSection />
         <ContactForm />
         <ClientsSection />
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </>
   );

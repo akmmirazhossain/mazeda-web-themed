@@ -1,8 +1,8 @@
 // pages/about.js
 import React from "react";
 
-const Footer = () => {
+const Config = () => {
   return <div>{/* Your component content */}</div>;
 };
 
-export default Footer;
+export default Config;

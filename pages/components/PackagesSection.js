@@ -62,9 +62,9 @@ const pricingData = [
 
 const PackagesSection = () => {
   return (
-    <section class="py-20">
-      <div class="grid  sm:grid-cols-2 lg:grid-cols-4 grid-flow-col  gap-4 justify-items-center">
-        <div class=" w-full  rounded-2xl shadow-xl bg-white">
+    <section className="py-20">
+      <div className="grid  sm:grid-cols-2 lg:grid-cols-4 grid-flow-col  gap-4 justify-items-center">
+        <div className=" w-full  rounded-2xl shadow-xl bg-white">
           <div className=" p-4">
             <div>
               <div className="flex justify-between border-b border-gray-200 pb-4 mb-4 text-center">
@@ -139,8 +139,8 @@ const PackagesSection = () => {
             </div>
           </div>
         </div>
-        <div class="col-span-3  w-full">
-          <div class="grid grid-cols-3 gap-4">
+        <div className="col-span-3  w-full">
+          <div className="grid grid-cols-3 gap-4">
             {pricingData.map((pricing, index) => (
               <div key={index} className="p-2  rounded-2xl shadow-xl bg-white">
                 <div
@@ -171,36 +171,13 @@ const PackagesSection = () => {
                         key={idx}
                         className="flex items-center text-gray-600 mb-2"
                       >
-                        <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                          <svg
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2.5"
-                            className="w-3 h-3"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M20 6L9 17l-5-5"></path>
-                          </svg>
-                        </span>
+                        <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0"></span>
                         {feature}
                       </p>
                     ))}
                   </div>
                   <button className="flex items-center mt-auto text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-2xl">
                     Purchase this plan
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      className="w-4 h-4 ml-auto"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
                   </button>
                 </div>
               </div>

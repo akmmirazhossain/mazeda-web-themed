@@ -1,7 +1,7 @@
 // components/Navbar.js
 import Image from "next/image";
 import { useState } from "react";
-import "../config/theme";
+import "../../config/theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneVolume, faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
@@ -49,7 +49,7 @@ function Navbar() {
           </div>
 
           <div className="flex ">
-            <ul class=" items-center  space-x-2 hidden sm:flex">
+            <ul className=" items-center  space-x-2 hidden sm:flex">
               <li>
                 <Link
                   className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
@@ -81,22 +81,7 @@ function Navbar() {
               <button
                 onClick={toggleMenu}
                 className="p-2  hover:text-deep-purple-accent-400 focus:outline-none focus:text-deep-purple-accent-400"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  ></path>
-                </svg>
-              </button>
+              ></button>
             </div>
           </div>
         </div>
@@ -124,7 +109,7 @@ function Navbar() {
               </li>
             </ul>
 
-            <ul class="flex sm:hidden justify-center my-4 space-x-2">
+            <ul className="flex sm:hidden justify-center my-4 space-x-2">
               <li>
                 <Link
                   className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "

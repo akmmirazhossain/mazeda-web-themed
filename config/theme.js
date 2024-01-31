@@ -1,4 +1,5 @@
 // theme.js
+import React from "react";
 
 const theme = {
   breakpoints: {

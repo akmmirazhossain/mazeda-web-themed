@@ -5,7 +5,7 @@ import {
   faBriefcase,
   faVideo,
 } from "@fortawesome/free-solid-svg-icons";
-import theme from "../config/theme";
+import theme from "../../config/theme";
 
 const Services = () => {
   return (
