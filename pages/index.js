@@ -24,7 +24,7 @@ function Home() {
         <StrengthSection />
         <ContactForm />
         <ClientsSection />
-        {/* <Footer /> */}
+        <Footer />
       </main>
     </>
   );

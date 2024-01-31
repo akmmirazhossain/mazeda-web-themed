@@ -7,13 +7,13 @@ function PromotionsSection() {
       <div className="overflow-hidden bg-white dark:bg-gray-900 lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
         <div className="lg:w-1/2">
           <div className="h-64 bg-cover lg:h-full relative">
-            {/* <Image
+            <Image
               src="/images/plane.jpg" // Replace with your actual image path
               alt="Image Alt Text"
               layout="fill"
               objectFit="cover"
               objectPosition="center"
-            /> */}
+            />
           </div>
         </div>
 
