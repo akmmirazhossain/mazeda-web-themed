@@ -3,7 +3,11 @@ import Image from "next/image";
 import { useState } from "react";
 import "../../config/theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoneVolume, faCreditCard } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhoneVolume,
+  faCreditCard,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 function Navbar() {
@@ -81,7 +85,9 @@ function Navbar() {
               <button
                 onClick={toggleMenu}
                 className="p-2  hover:text-deep-purple-accent-400 focus:outline-none focus:text-deep-purple-accent-400"
-              ></button>
+              >
+                <FontAwesomeIcon icon={faBars} />
+              </button>
             </div>
           </div>
         </div>
