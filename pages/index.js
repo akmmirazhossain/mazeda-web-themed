@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
 import LinksSection from "./components/LinksSection";
 import PackagesSection from "./components/PackagesSection";
+import PayBillSection from "./components/PayBillSection";
 import PromotionsSection from "./components/PromotionsSection";
 import StrengthSection from "./components/StrengthSection";
 import ClientsSection from "./components/ClientsSection";
@@ -21,6 +22,7 @@ function Home() {
           <ServicesSection />
           <LinksSection />
           <PackagesSection />
+          <PayBillSection />
           <PromotionsSection />
           <StrengthSection />
           <ContactForm />

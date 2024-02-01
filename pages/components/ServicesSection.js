@@ -16,8 +16,8 @@ const Services = () => {
         </h2>
       </div>
 
-      <div className="grid gap-4 row-gap-5 sm:grid-cols-2  md:grid-cols-3 ">
-        <div className="flex flex-col justify-between p-5 border rounded-2xl shadow-xl bg-white">
+      <div className="grid gap-4 sm:gap-5 md:gap-6 sm:grid-cols-2  md:grid-cols-3 ">
+        <div className="flex flex-col justify-between p-5 rounded-2xl  shadow-xl bg-white">
           <div>
             <div
               className="flex items-center justify-center w-16 h-16 mb-4 rounded-full"
@@ -38,7 +38,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between p-5 border rounded-2xl shadow-xl bg-white">
+        <div className="flex flex-col justify-between p-5  rounded-2xl shadow-xl bg-white">
           <div>
             <div
               className="flex items-center justify-center w-16 h-16 mb-4 rounded-full"
@@ -59,7 +59,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between p-5 border rounded-2xl shadow-xl bg-white">
+        <div className="flex flex-col justify-between p-5  rounded-2xl shadow-xl bg-white">
           <div>
             <div
               className="flex items-center justify-center w-16 h-16 mb-4 rounded-full"
