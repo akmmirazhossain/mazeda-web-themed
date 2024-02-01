@@ -5,7 +5,7 @@ const ClientsSection = () => {
     <div className="my-20">
       <div className="pb-8 mb-4 text-center mx-auto">
         <h1 className="text-3xl  leading-none font-medium">
-          Successful Partners
+          Our Successful Partners
         </h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-4 py-4">
