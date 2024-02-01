@@ -1,7 +1,10 @@
 // components/PricingSection.js
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCircleCheck,
+  faArrowRightLong,
+} from "@fortawesome/free-solid-svg-icons";
 
 const pricingData = [
   {
@@ -35,7 +38,7 @@ const pricingData = [
     features: [
       "Up to 60 Mbps",
       "Ideal for 5 concurrent users",
-      "FHD TV/Netflix streaming",
+      "2K TV/Netflix streaming",
       "Seamless online gaming",
     ],
   },
@@ -63,7 +66,7 @@ const pricingData = [
 const PackagesSection = () => {
   return (
     <section className="py-20">
-      <div className="grid  sm:grid-cols-2 lg:grid-cols-4 grid-flow-col  gap-4 justify-items-center">
+      <div className="grid grid-cols-1 grid-flow-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-flow-col gap-4 sm:gap-5 md:gap-6 justify-items-center">
         <div className=" w-full  rounded-2xl shadow-xl bg-white">
           <div className=" p-4">
             <div>
@@ -137,10 +140,13 @@ const PackagesSection = () => {
                 </p>
               </div>
             </div>
+            <button className=" text-center mt-4 text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-full">
+              Which package should I choose?
+            </button>
           </div>
         </div>
-        <div className="col-span-3  w-full">
-          <div className="grid grid-cols-3 gap-4">
+        <div className="col-span-1 lg:col-span-3 w-full">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5 md:gap-6 ">
             {pricingData.map((pricing, index) => (
               <div key={index} className="p-2  rounded-2xl shadow-xl bg-white">
                 <div
@@ -176,8 +182,9 @@ const PackagesSection = () => {
                       </p>
                     ))}
                   </div>
-                  <button className="flex items-center mt-auto text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-2xl">
-                    Purchase this plan
+                  <button className=" items-center mt-auto text-center text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-full">
+                    Proceed with this plan{" "}
+                    <FontAwesomeIcon icon={faArrowRightLong} />
                   </button>
                 </div>
               </div>

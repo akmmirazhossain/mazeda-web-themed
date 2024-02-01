@@ -14,17 +14,20 @@ import theme from "../config/theme";
 function Home() {
   return (
     <>
-      <Navbar />
-      <main className="container mx-auto light-theme max-w-7xl">
+      <main>
+        <Navbar />
         <HeroSection />
-        <ServicesSection />
-        <LinksSection />
-        <PackagesSection />
-        <PromotionsSection />
-        <StrengthSection />
-        <ContactForm />
-        <ClientsSection />
-        <Footer />
+        <div className="container mx-auto light-theme px-4 sm:px-5 md:px-6 lg:p-0 max-w-7xl">
+          <ServicesSection />
+          <LinksSection />
+          <PackagesSection />
+          <PromotionsSection />
+          <StrengthSection />
+          <ContactForm />
+          <ClientsSection />
+
+          <Footer />
+        </div>
       </main>
     </>
   );
