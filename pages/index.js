@@ -24,7 +24,7 @@ function Home() {
           <PackagesSection />
           <PayBillSection />
           <PromotionsSection />
-          <StrengthSection />
+          {/* <StrengthSection /> */}
           <ContactForm />
           <ClientsSection />
 
