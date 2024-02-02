@@ -27,7 +27,7 @@ function Navbar() {
                 src="/logo.png" // Path to your logo in the public directory
                 alt="Logo" // Alt text for accessibility
                 width={120} // Set the width of the image
-                height={40} // Set the height of the image
+                height={36} // Set the height of the image
               />
             </div>
             <ul className=" items-center hidden space-x-8 lg:flex text-base font-medium">
@@ -56,11 +56,12 @@ function Navbar() {
             <ul className=" items-center  space-x-2 hidden sm:flex">
               <li>
                 <Link
-                  className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
                   href=""
+                  className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
                 >
                   <FontAwesomeIcon
-                    className="text-xs pr-1"
+                    size="xs"
+                    className=" pr-1"
                     icon={faCreditCard}
                   />
                   Pay Bill
@@ -68,11 +69,12 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
                   href=""
+                  className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
                 >
                   <FontAwesomeIcon
-                    className="text-xs pr-1"
+                    size="xs"
+                    className=" pr-1"
                     icon={faPhoneVolume}
                   />
                   Support

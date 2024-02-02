@@ -71,8 +71,8 @@ const PackagesSection = () => {
           <div className=" p-4">
             <div>
               <div className="flex justify-between border-b border-gray-200 pb-4 mb-4 text-center">
-                <h1 className="text-4xl  leading-none text-center font-medium">
-                  Packages
+                <h1 className="text-3xl  leading-none text-center font-medium">
+                  Monthly Pricing
                 </h1>
               </div>
 
@@ -141,7 +141,7 @@ const PackagesSection = () => {
               </div>
             </div>
             <button className=" text-center mt-4 text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-full">
-              Which package should I choose?
+              Find your best suited package!
             </button>
           </div>
         </div>

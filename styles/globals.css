@@ -18,6 +18,18 @@
   }
 }
 
+/* TAILWIND CUSTOM STYLES */
+
+@layer utilities {
+  .h-500 {
+    height: 500px;
+  }
+
+    .h-600 {
+      height: 600px;
+    }
+}
+
 body {
 
 background: #f9f9f9;
