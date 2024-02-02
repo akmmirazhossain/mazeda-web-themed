@@ -18,109 +18,103 @@ const Footer = () => {
           <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
+                SERVICES
               </h2>
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    First Link
+                    Internet Plans
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Second Link
+                    Installation Options
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Third Link
+                    Customer Support
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Fourth Link
+                    Billing Information
                   </a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
+                RESOURCES
               </h2>
               <nav className="list-none mb-10">
                 <li>
+                  <a className="text-gray-600 hover:text-gray-800">FAQs</a>
+                </li>
+                <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    First Link
+                    User Guides
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Second Link
+                    Terms and Conditions
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Third Link
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Fourth Link
+                    Privacy Policy
                   </a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
+                CONTACT US
               </h2>
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    First Link
+                    Customer Support
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Second Link
+                    Sales Enquiries
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Third Link
+                    Technical Assistance
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Fourth Link
-                  </a>
+                  <a className="text-gray-600 hover:text-gray-800">Feedback</a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                CATEGORIES
+                SUBSCRIBE
               </h2>
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    First Link
+                    Newsletter
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Second Link
+                    Promotions
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">
-                    Third Link
+                    Exclusive Offers
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
-                    Fourth Link
-                  </a>
+                  <a className="text-gray-600 hover:text-gray-800">Updates</a>
                 </li>
               </nav>
             </div>
