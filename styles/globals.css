@@ -28,26 +28,38 @@
     .h-600 {
       height: 600px;
     }
+
+         .text-balance {
+           text-wrap: balance;
+         }
 }
 
 body {
 
 background: #f9f9f9;
 
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
 
 
 .light-theme {
   color: #333333;
 }
 
+/* FONTS */
 
+@font-face {
+  font-family: 'shfont';
+  src: url('/fonts/Shamim-bangla-font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.shfont {
+  font-family: 'shfont', sans-serif;
+  
+}
 
 
 /* SWIPER JS */

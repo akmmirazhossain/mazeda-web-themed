@@ -27,25 +27,28 @@ const HeroSection = () => {
     >
       <SwiperSlide className="bg-secondary">
         <div
-          className="bg-cover bg-center sm:h-600 "
+          className="bg-cover bg-center  "
           style={{ backgroundImage: 'url("/images/slider/slider-bg.jpg")' }}
         >
           <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:p-0 max-w-7xl text-white h-full">
             <div class="grid grid-cols-1 sm:grid-cols-2 h-full">
-              <div class="grid grid-rows-2 p-4 items-center justify-center">
-                <div className="text-slate-700 text-4xl text-left">
-                  ঘরে বসে আপনার বিল পরিশোধ করুন, <br />
-                  কোন অতিরিক্ত খরচ ছাড়া।
+              <div class="grid grid-rows-4 sm:grid-rows-6 p-4 items-center justify-center">
+                <div className="flex items-end h-full text-slate-700 text-3xl sm:text-4xl text-left align-bottom row-span-2 sm:row-span-2 p-4 sm:p-0  shfont">
+                  <p>
+                    ঘরে বসে আপনার বিল পরিশোধ করুন, <br />
+                    কোন অতিরিক্ত খরচ ছাড়া।
+                  </p>
                 </div>
-                <div>
-                  {/* <div class="grid grid-rows-3 grid-flow-col gap-2"></div> */}
-                  <div class="grid grid-rows-3 grid-flow-col gap-2 w-3/4">
+
+                <div className="grid justify-items-center sm:justify-items-start row-span-2 sm:row-span-4">
+                  <div class="grid grid-rows-3 grid-flow-col gap-2 w-3/4 ">
                     <div className="">
                       <Image
                         src="/images/payment-gateways/bkash.svg"
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                     <div>
@@ -54,6 +57,7 @@ const HeroSection = () => {
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                     <div>
@@ -62,6 +66,7 @@ const HeroSection = () => {
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                     <div>
@@ -70,6 +75,7 @@ const HeroSection = () => {
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                     <div>
@@ -78,6 +84,7 @@ const HeroSection = () => {
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                     <div>
@@ -86,6 +93,7 @@ const HeroSection = () => {
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                     <div>
@@ -94,6 +102,7 @@ const HeroSection = () => {
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                     <div>
@@ -102,6 +111,7 @@ const HeroSection = () => {
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                     <div>
@@ -110,6 +120,7 @@ const HeroSection = () => {
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                     <div>
@@ -118,6 +129,7 @@ const HeroSection = () => {
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                     <div>
@@ -126,18 +138,23 @@ const HeroSection = () => {
                         width={100}
                         height={100}
                         alt="Slider"
+                        loading="eager"
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class=" items-start sm:items-end justify-center">
-                <Image
-                  src="/images/slider/pay-bill.png"
-                  width={800}
-                  height={800}
-                  alt="Slider"
-                />
+              <div class="grid grid-rows-9 items-start sm:items-end justify-center ">
+                <div className="row-span-1"></div>
+                <div className="row-span-8">
+                  <Image
+                    src="/images/slider/pay-bill.png"
+                    width={732}
+                    height={612}
+                    alt="Slider"
+                    loading="eager"
+                  />
+                </div>
               </div>
             </div>
           </div>
