@@ -35,7 +35,7 @@ const HeroSection = () => {
               <div class="grid grid-rows-4 sm:grid-rows-6 p-4 items-center justify-center">
                 <div className="flex items-end h-full text-slate-700 text-3xl sm:text-4xl text-left align-bottom row-span-2 sm:row-span-2 p-4 sm:p-0  shfont">
                   <p>
-                    ঘরে বসে আপনার বিল পরিশোধ করুন, <br />
+                    ঘরে বসেই ইন্টারনেট বিল পরিশোধ করুন, <br />
                     কোন অতিরিক্ত খরচ ছাড়া।
                   </p>
                 </div>
