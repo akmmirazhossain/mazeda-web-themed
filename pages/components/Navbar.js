@@ -18,7 +18,7 @@ function Navbar() {
   };
 
   return (
-    <nav className=" mx-auto border sticky top-0 z-10 bg-[#FFFFFF] bg-opacity-75">
+    <nav className=" mx-auto border sticky top-0 z-10 bg-[#FFFFFF] bg-opacity-90">
       <div className="py-2 lg:py-4 mx-auto px-6 xl:px-0 max-w-7xl ">
         <div className="relative flex items-center justify-between">
           <div className="flex items-center">
@@ -97,7 +97,7 @@ function Navbar() {
         </div>
       </div>
       {menuOpen && (
-        <div className="lg:hidden fixed w-full bg-[#FFFFFF] bg-opacity-75">
+        <div className="lg:hidden fixed w-full bg-[#FFFFFF] bg-opacity-90">
           <ul className="flex flex-col items-center mt-4 space-y-4">
             <Link href="/">
               <li>Home</li>

@@ -28,11 +28,22 @@ const ContactPage = () => {
                   <h1 className="text-3xl border-b pb-2">Contact Us</h1>
                   <div className="text-gray-600 body-font">
                     <div className="container mx-auto py-8">
-                      <p className="mb-1"> Phone: +8809613-334455 </p>
-                      <p className="mb-6"> Support: +88 09613 334455</p>
+                      <p className="mb-1 bg-cyan-200 p-2 rounded font-medium text-xl">
+                        {" "}
+                        Inqueries: +8809613-334455{" "}
+                      </p>
+                      <p className="mb-1 bg-amber-100 p-2 rounded font-medium text-xl">
+                        {" "}
+                        Support: +88 09613 334455
+                      </p>
+
+                      <p className="mb-6 bg-green-200 p-2 rounded font-medium text-xl">
+                        {" "}
+                        New Connection: +88 09613 334455
+                      </p>
                       <p className="mb-6">
-                        Address: House # 123, Flat # B4, Road # 13/A, West
-                        Dhanmondi, Dhaka. mazeda@mazedanetworks.net
+                        Headquarters Address: House # 123, Flat # B4, Road #
+                        13/A, West Dhanmondi, Dhaka. mazeda@mazedanetworks.net
                       </p>
                       <p>
                         Facebook Page:{" "}

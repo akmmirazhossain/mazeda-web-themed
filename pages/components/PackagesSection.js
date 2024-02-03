@@ -5,6 +5,7 @@ import {
   faCircleCheck,
   faArrowRightLong,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const pricingData = [
   {
@@ -140,9 +141,9 @@ const PackagesSection = () => {
                 </p>
               </div>
             </div>
-            <button className=" text-center mt-4 text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-full">
+            {/* <button className=" text-center mt-4 text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-full">
               Find your best suited package!
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="col-span-1 lg:col-span-3 w-full">
@@ -182,9 +183,13 @@ const PackagesSection = () => {
                       </p>
                     ))}
                   </div>
+
                   <button className=" items-center mt-auto text-center text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-full">
-                    Proceed with this plan{" "}
-                    <FontAwesomeIcon icon={faArrowRightLong} />
+                    <Link href="/contact">
+                      {" "}
+                      Proceed with this plan{" "}
+                      <FontAwesomeIcon icon={faArrowRightLong} />
+                    </Link>
                   </button>
                 </div>
               </div>
