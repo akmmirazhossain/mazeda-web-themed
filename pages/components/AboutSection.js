@@ -12,8 +12,8 @@ function AboutSection() {
               <div className=" rounded-full inline-flex items-center justify-center  text-gray-400">
                 <Image
                   src="/images/house.png"
-                  width={100}
-                  height={100}
+                  width={256}
+                  height={256}
                   alt="house"
                 />
               </div>
@@ -26,7 +26,7 @@ function AboutSection() {
                     Mazeda Networks Limited stands as a leading internet service
                     provider, headquartered in Dhanmondi, Dhaka-1209,
                     Bangladesh, with branches strategically placed in and
-                    outside Dhaka. Established in 2003, we bring over 15 years
+                    outside Dhaka. Established in 2003, we bring over 21 years
                     of expertise to deliver high-speed internet services
                     tailored for both home and corporate users, meeting the
                     diverse needs of our customers.

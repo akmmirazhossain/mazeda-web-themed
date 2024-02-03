@@ -24,7 +24,7 @@ function Home() {
           <LinksSection />
           <PackagesSection />
 
-          <PromotionsSection />
+          {/* <PromotionsSection /> */}
           {/* <StrengthSection /> */}
           <ContactForm />
           <ClientsSection />

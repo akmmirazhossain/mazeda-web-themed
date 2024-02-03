@@ -95,59 +95,55 @@ function Navbar() {
             </div>
           </div>
         </div>
-        {/* Responsive menu */}
-        {menuOpen && (
-          <div className="lg:hidden">
-            <ul className="flex flex-col items-center mt-4 space-y-4">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/packages">Packages</Link>
-              </li>
-              <li>
-                <Link href="/coverage">Coverage</Link>
-              </li>
-              <li>
-                <Link href="/entertainment">Entertainment</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
-            </ul>
-
-            <ul className="flex sm:hidden justify-center my-4 space-x-2">
-              <li>
-                <Link
-                  className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
-                  href="/pay-bill"
-                >
-                  <FontAwesomeIcon
-                    className="text-xs pr-1"
-                    icon={faCreditCard}
-                  />
-                  Pay Bill
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
-                  href="/contact"
-                >
-                  <FontAwesomeIcon
-                    className="text-xs pr-1"
-                    icon={faPhoneVolume}
-                  />
-                  Support
-                </Link>
-              </li>
-            </ul>
-          </div>
-        )}
       </div>
+      {menuOpen && (
+        <div className="lg:hidden fixed w-full bg-[#FFFFFF] bg-opacity-75">
+          <ul className="flex flex-col items-center mt-4 space-y-4">
+            <Link href="/">
+              <li>Home</li>
+            </Link>
+            <Link href="/about">
+              <li className="w-full">About</li>
+            </Link>
+            <li>
+              <Link href="/packages">Packages</Link>
+            </li>
+            <li>
+              <Link href="/coverage">Coverage</Link>
+            </li>
+            <li>
+              <Link href="/entertainment">Entertainment</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+
+          <ul className="flex sm:hidden justify-center my-4 space-x-2">
+            <li>
+              <Link
+                className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
+                href="/pay-bill"
+              >
+                <FontAwesomeIcon className="text-xs pr-1" icon={faCreditCard} />
+                Pay Bill
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
+                href="/contact"
+              >
+                <FontAwesomeIcon
+                  className="text-xs pr-1"
+                  icon={faPhoneVolume}
+                />
+                Support
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
