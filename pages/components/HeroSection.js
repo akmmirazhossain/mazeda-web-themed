@@ -36,7 +36,7 @@ const HeroSection = () => {
                 <div className="flex items-end h-full text-slate-700 text-3xl sm:text-4xl text-left align-bottom row-span-2 sm:row-span-2 p-4 sm:p-0  shfont">
                   <p>
                     ঘরে বসেই ইন্টারনেট বিল পরিশোধ করুন, <br />
-                    কোন অতিরিক্ত খরচ ছাড়া।
+                    কোন অতিরিক্ত খরচ ছারাই।
                   </p>
                 </div>
 

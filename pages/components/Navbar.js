@@ -23,31 +23,33 @@ function Navbar() {
         <div className="relative flex items-center justify-between">
           <div className="flex items-center">
             <div className="pr-10">
-              <Image
-                src="/logo.png" // Path to your logo in the public directory
-                alt="Logo" // Alt text for accessibility
-                width={120} // Set the width of the image
-                height={36} // Set the height of the image
-              />
+              <Link href="/">
+                <Image
+                  src="/logo.png" // Path to your logo in the public directory
+                  alt="Logo" // Alt text for accessibility
+                  width={120} // Set the width of the image
+                  height={36} // Set the height of the image
+                />
+              </Link>
             </div>
             <ul className=" items-center hidden space-x-8 lg:flex text-base font-medium">
               <li>
-                <Link href="">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="">About</Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="">Packages</Link>
+                <Link href="/packages">Packages</Link>
               </li>
               <li>
-                <Link href="">Coverage</Link>
+                <Link href="/coverage">Coverage</Link>
               </li>
               <li>
-                <Link href="">Entertainment</Link>
+                <Link href="/entertainment">Entertainment</Link>
               </li>
               <li>
-                <Link href="">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -56,7 +58,7 @@ function Navbar() {
             <ul className=" items-center  space-x-2 hidden sm:flex">
               <li>
                 <Link
-                  href=""
+                  href="/pay-bill"
                   className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
                 >
                   <FontAwesomeIcon
@@ -69,7 +71,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  href=""
+                  href="/contact"
                   className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
                 >
                   <FontAwesomeIcon
@@ -98,22 +100,22 @@ function Navbar() {
           <div className="lg:hidden">
             <ul className="flex flex-col items-center mt-4 space-y-4">
               <li>
-                <Link href="">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="">About</Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="">Packages</Link>
+                <Link href="/packages">Packages</Link>
               </li>
               <li>
-                <Link href="">Coverage</Link>
+                <Link href="/coverage">Coverage</Link>
               </li>
               <li>
-                <Link href="">Entertainment</Link>
+                <Link href="/entertainment">Entertainment</Link>
               </li>
               <li>
-                <Link href="">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
 
@@ -121,7 +123,7 @@ function Navbar() {
               <li>
                 <Link
                   className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
-                  href=""
+                  href="/pay-bill"
                 >
                   <FontAwesomeIcon
                     className="text-xs pr-1"
@@ -133,7 +135,7 @@ function Navbar() {
               <li>
                 <Link
                   className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
-                  href=""
+                  href="/contact"
                 >
                   <FontAwesomeIcon
                     className="text-xs pr-1"

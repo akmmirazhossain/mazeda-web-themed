@@ -26,14 +26,13 @@ function Home() {
           <ServicesSection />
           <LinksSection />
           <PackagesSection />
-          <PayBillSection />
+
           <PromotionsSection />
           {/* <StrengthSection /> */}
           <ContactForm />
           <ClientsSection />
-
-          <Footer />
         </div>
+        <Footer />
       </main>
     </>
   );
