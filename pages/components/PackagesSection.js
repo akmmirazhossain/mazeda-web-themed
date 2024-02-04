@@ -56,6 +56,45 @@ const pricingData = [
       "Priority support",
     ],
   },
+
+  {
+    type: "ULTRA",
+    speed: "80 Mbps",
+    price: "৳3000",
+    features: [
+      "Up to 100 Mbps",
+      "Ideal for 6 - 10 concurrent users",
+      "4K TV/Netflix streaming",
+      "Seamless online gaming",
+      "Priority support",
+    ],
+  },
+
+  {
+    type: "INFINITE",
+    speed: "110 Mbps",
+    price: "৳4000",
+    features: [
+      "Up to 150 Mbps",
+      "Ideal for 10 - 20 concurrent users",
+      "4K TV/Netflix streaming",
+      "Seamless online gaming",
+      "Priority support",
+    ],
+  },
+
+  {
+    type: "ENTERPRISE",
+    speed: "",
+    price: "",
+    features: [
+      "Speed adjustments will be made based on the overall user count.",
+      "Ideal for small/large institutions",
+      "4K TV/Netflix streaming",
+      "Seamless online gaming",
+      "Very high priority support",
+    ],
+  },
   {
     type: "SINGLE",
     speed: "7 Mbps",
