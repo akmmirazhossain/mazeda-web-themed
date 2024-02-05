@@ -30,7 +30,7 @@ const HeroSection = () => {
           className="bg-cover bg-center  "
           style={{ backgroundImage: 'url("/images/slider/slider-bg.jpg")' }}
         >
-          <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:p-0 max-w-7xl text-white h-full">
+          <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:p-4  max-w-7xl text-white h-full">
             <div class="grid grid-cols-1 sm:grid-cols-2 h-full">
               <div class="grid grid-rows-4 sm:grid-rows-6 p-4 items-center justify-center">
                 <div className="flex items-end h-full text-slate-700 text-3xl sm:text-4xl text-left align-bottom row-span-2 sm:row-span-2 p-4 sm:p-0  shfont">
@@ -166,7 +166,7 @@ const HeroSection = () => {
           className="bg-cover bg-center h-500"
           style={{ backgroundImage: 'url("/images/slider/slide-bg.jpg")' }}
         >
-          <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:p-0 max-w-7xl text-white h-full">
+          <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:p-4  max-w-7xl text-white h-full">
             <div class="grid grid-rows-8 h-full">
               <div class="row-span-3 bg-blue-500 p-4"></div>
               <div class="row-span-2 bg-green-500 p-4 flex items-center justify-center">
