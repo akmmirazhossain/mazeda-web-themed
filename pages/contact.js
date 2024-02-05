@@ -10,8 +10,8 @@ const ContactPage = () => {
       <main>
         <Navbar />
 
-        <div className="container mx-auto light-theme px-4 sm:px-5 md:px-6 lg:p-0 max-w-7xl">
-          <div className="container px-5 pb-6 mx-auto flex flex-col">
+        <div className="container mx-auto light-theme px-4 sm:px-5 md:px-6  max-w-7xl my-4 sm:my-8 md:my-12 lg:my-16 xl:my-20">
+          <div className="container px-5 pb-6 mx-auto flex flex-col ">
             <div className="lg:w-4/6 mx-auto">
               <div className="flex flex-col sm:flex-row mt-10">
                 <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">

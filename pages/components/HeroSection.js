@@ -11,7 +11,7 @@ import "swiper/css/effect-fade";
 const HeroSection = () => {
   return (
     <Swiper
-      className="mySwiper"
+      className="mySwiper my-14 sm:my-14 md:my-14 lg:my-16 xl:my-18"
       effect="fade"
       slidesPerView={1}
       pagination={{

@@ -18,9 +18,9 @@ function Navbar() {
   };
 
   return (
-    <nav className=" fixed mx-auto border w-full top-0 z-10 bg-[#FFFFFF] bg-opacity-90">
+    <nav className=" mx-auto border sticky top-0 z-10 bg-[#FFFFFF] bg-opacity-90">
       <div className="py-2 lg:py-4 mx-auto px-6 xl:px-0 max-w-7xl ">
-        <div className=" flex items-center justify-between">
+        <div className="relative flex items-center justify-between">
           <div className="flex items-center">
             <div className="pr-10">
               <Link href="/">
@@ -97,10 +97,7 @@ function Navbar() {
         </div>
       </div>
       {menuOpen && (
-        <div
-          className="  overflow-auto w-full bg-[#FFFFFF] bg-opacity-90"
-          style={{ transform: "translate3d(0, 0, 0)" }}
-        >
+        <div className=" fixed top-0 left-0 overflow-hidden w-full bg-[#FFFFFF] bg-opacity-90">
           <ul className="flex flex-col items-center mt-4 space-y-4">
             <Link href="/">
               <li>Home</li>

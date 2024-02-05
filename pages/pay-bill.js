@@ -8,7 +8,7 @@ function PayBillPage() {
       <main>
         <Navbar />
 
-        <div className="container mx-auto light-theme px-4 sm:px-5 md:px-6 lg:p-0 max-w-7xl">
+        <div className="container mx-auto light-theme px-4 sm:px-5 md:px-6 lg:p-0 max-w-7xl my-4 sm:my-8 md:my-12 lg:my-16 xl:my-20">
           <PayBillSection />
         </div>
         <Footer />
