@@ -28,12 +28,57 @@ const HeroSection = () => {
       <SwiperSlide className="bg-secondary">
         <div
           className="bg-cover bg-center  "
+          style={{
+            backgroundImage: 'url("/images/slider/slide-bg-dhaka.png")',
+          }}
+        >
+          <div className="container mx-auto sm:px-5 md:px-6 lg:px-4  max-w-7xl text-white h-full h-600 lg:h-600">
+            <div class="grid grid-rows-8 h-full">
+              <div class="row-span-3 flex flex-col justify-end items-center text-[#03738C] text-4xl sm:text-5xl">
+                <p class="text-center  font-medium bg-white bg-opacity-50  p-2  rounded-lg">
+                  Dhaka's fastest ISP
+                </p>
+                <p class="text-center font-medium bg-white bg-opacity-50  p-2  rounded-lg">
+                  with 99.99% uptime
+                </p>
+              </div>
+
+              <div class="flex row-span-5 justify-center md:justify-between ">
+                <div class=" hidden md:block xl:pl-8">
+                  <Image
+                    src="/images/slider/girl_on_phone.png"
+                    width={512}
+                    height={512}
+                    alt="Slider"
+                    loading="eager"
+                    className="transform -scale-x-100 "
+                  />
+                </div>
+
+                <div class="  xl:pr-8">
+                  <Image
+                    src="/images/slider/man_on_phone.png"
+                    width={512}
+                    height={512}
+                    alt="Slider"
+                    loading="eager"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div
+          className="bg-cover bg-center  "
           style={{ backgroundImage: 'url("/images/slider/slider-bg.jpg")' }}
         >
-          <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:p-4  max-w-7xl text-white h-full">
+          <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:px-4  max-w-7xl text-white h-full h-600 lg:h-600">
             <div class="grid grid-cols-1 sm:grid-cols-2 h-full">
               <div class="grid grid-rows-4 sm:grid-rows-6 p-4 items-center justify-center">
-                <div className="flex items-end h-full text-slate-700 text-3xl sm:text-4xl text-left align-bottom row-span-2 sm:row-span-2 p-4 sm:p-0  shfont">
+                <div className="flex items-end h-full text-slate-700 text-2xl sm:text-4xl text-left align-bottom row-span-2 sm:row-span-2 p-4 sm:p-0  shfont">
                   <p>
                     ঘরে বসেই ইন্টারনেট বিল পরিশোধ করুন, <br />
                     কোন অতিরিক্ত খরচ ছারাই।
