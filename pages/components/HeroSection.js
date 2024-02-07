@@ -36,7 +36,7 @@ const HeroSection = () => {
             <div class="grid grid-rows-8 h-full">
               <div class="row-span-3 flex flex-col justify-end items-center text-[#03738C] text-4xl sm:text-5xl">
                 <p class="text-center  font-medium bg-white bg-opacity-50  p-2  rounded-lg">
-                  Dhaka's fastest ISP
+                  Dhaka&apos;s fastest ISP
                 </p>
                 <p class="text-center font-medium bg-white bg-opacity-50  p-2  rounded-lg">
                   with 99.99% uptime
