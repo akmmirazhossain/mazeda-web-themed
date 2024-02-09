@@ -103,87 +103,35 @@ const pricingData = [
   },
 ];
 
+const features = [
+  "4k Youtube, Facebook and more",
+  "Gaming cache (100 Mbps)",
+  "FTP access (Over 11,500 Movies)",
+  "10 Gbps BDIX Connection",
+  "24/7 call Support",
+  "Doorstep support (9 am - 10 pm)",
+];
+
 const PackagesSection = () => {
   return (
-    <section className="py-20">
-      <div className="grid grid-cols-1 grid-flow-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-flow-col gap-4 sm:gap-5 md:gap-6 justify-items-center">
-        <div className=" w-full  rounded-2xl shadow-xl bg-white">
-          <div className=" p-4">
-            <div>
-              <div className="flex justify-between border-b border-gray-200 pb-4 mb-4 text-center">
-                <h1 className="text-3xl  leading-none text-center font-medium">
-                  Monthly Pricing
-                </h1>
+    <section className="section_akm">
+      <div className="heading_akm">Monthly Pricing</div>
+      <div className="grid grid-cols-1 grid-flow-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-flow-col gap_akm justify-items-center">
+        <div className="box_round_shadow">
+          <p className="body_text_akm font-bold pb-4">
+            All packages include these features.
+          </p>
+          {features.map((feature, index) => (
+            <div key={index} className="flex items-start mb-2">
+              <div className="mr-2 text-white rounded-full">
+                <FontAwesomeIcon
+                  icon={faCircleCheck}
+                  className="text-[#03738C]"
+                />
               </div>
-
-              <div className="mb-4">
-                <p className="flex items-center mb-4 font-medium">
-                  These features are inclusive with all of our packages
-                </p>
-                <p className="flex items-center mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="text-[#03738C]"
-                    />
-                  </span>
-                  4k Youtube, Facebook and more
-                </p>
-
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="text-[#03738C]"
-                    />
-                  </span>
-                  Gaming cache (100 Mbps)
-                </p>
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="text-[#03738C]"
-                    />
-                  </span>
-                  FTP access (Over 11,500 Movies)
-                </p>
-
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="text-[#03738C]"
-                    />
-                  </span>
-                  10 Gbps BDIX Connection
-                </p>
-
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="text-[#03738C]"
-                    />
-                  </span>
-                  24/7 call Support
-                </p>
-
-                <p className="flex items-center text-gray-600 mb-2">
-                  <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="text-[#03738C]"
-                    />
-                  </span>
-                  Doorstep support (9 am - 10 pm)
-                </p>
-              </div>
+              <div>{feature}</div>
             </div>
-            {/* <button className=" text-center mt-4 text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-full">
-              Find your best suited package!
-            </button> */}
-          </div>
+          ))}
         </div>
         <div className="col-span-1 lg:col-span-3 w-full">
           <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5 md:gap-6 ">
@@ -203,21 +151,23 @@ const PackagesSection = () => {
                     {pricing.type}
                   </h2>
                   <div className="flex justify-between border-b border-gray-200 pb-4 mb-4 ">
-                    <h1 className="text-4xl text-gray-900 leading-none">
+                    <span className="text-4xl text-gray-900 leading-none">
                       {pricing.speed}
-                    </h1>
-                    <h1 className="text-2xl text-gray-900  inline-block align-baseline leading-none">
+                    </span>
+                    <span className="text-2xl text-gray-900  inline-block align-baseline leading-none">
                       {pricing.price}
-                    </h1>
+                    </span>
                   </div>
 
                   <div className="mb-4">
                     {pricing.features.map((feature, idx) => (
-                      <p
-                        key={idx}
-                        className="flex items-center text-gray-600 mb-2"
-                      >
-                        <span className="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0"></span>
+                      <p key={idx} className="flex mb-2">
+                        <div className="mr-2 text-white rounded-full">
+                          <FontAwesomeIcon
+                            icon={faCircleCheck}
+                            className="text-[#03738C]"
+                          />
+                        </div>
                         {feature}
                       </p>
                     ))}

@@ -7,77 +7,52 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import theme from "../../config/theme";
 
+const services = [
+  {
+    icon: faHouseSignal,
+    title: "Home Internet",
+    description:
+      "Elevate your home experience with high-speed internet at your fingertips.",
+  },
+  {
+    icon: faBriefcase,
+    title: "Corporate Internet",
+    description:
+      "Boost your business efficiency with our Corporate Internet: fast, secure, and reliable connectivity solutions.",
+  },
+  {
+    icon: faVideo,
+    title: "CCTV Solutions",
+    description:
+      "Securing peace of mind with our advanced CCTV solutions for comprehensive and reliable surveillance.",
+  },
+];
+
 const Services = () => {
   return (
-    <div className=" py-10 mx-auto  lg:py-16">
-      <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 className="max-w-lg mb-6 font-sans text-xl font-bold leading-none tracking-tight text-gray-900 sm:text-2xl md:mx-auto">
-          Our Services
-        </h2>
+    <section className="section_akm">
+      <div className="heading_akm">Our Services</div>
+
+      <div className="grid gap_akm sm:grid-cols-2 lg:grid-cols-3">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-between box_round_shadow"
+          >
+            <div>
+              <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-[#e6242d]">
+                <FontAwesomeIcon
+                  className="text-2xl text-white"
+                  icon={service.icon}
+                />
+              </div>
+              <h6 className="subheading_akm">{service.title}</h6>
+              <p className="body_text_akm">{service.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
-
-      <div className="grid gap-4 sm:gap-5 md:gap-6 sm:grid-cols-2  md:grid-cols-3 ">
-        <div className="flex flex-col justify-between p-5 rounded-2xl  shadow-xl bg-white">
-          <div>
-            <div
-              className="flex items-center justify-center w-16 h-16 mb-4 rounded-full"
-              style={{ backgroundColor: theme.colorPalette.secondaryRed }}
-            >
-              <FontAwesomeIcon
-                className="text-2xl text-white"
-                icon={faHouseSignal}
-              />
-            </div>
-            <h6 className="mb-2 font-semibold text-2xl leading-5">
-              Home Internet
-            </h6>
-            <p className="mb-3 text-sm">
-              Elevate your home experience with high-speed internet at your
-              fingertips.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-between p-5  rounded-2xl shadow-xl bg-white">
-          <div>
-            <div
-              className="flex items-center justify-center w-16 h-16 mb-4 rounded-full"
-              style={{ backgroundColor: theme.colorPalette.secondaryRed }}
-            >
-              <FontAwesomeIcon
-                className="text-2xl text-white"
-                icon={faBriefcase}
-              />
-            </div>
-            <h6 className="mb-2 font-semibold text-2xl leading-5">
-              Corporate Internet
-            </h6>
-            <p className="mb-3 text-sm">
-              Boost your business efficiency with our Corporate Internet: fast,
-              secure, and reliable connectivity solutions.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-between p-5  rounded-2xl shadow-xl bg-white">
-          <div>
-            <div
-              className="flex items-center justify-center w-16 h-16 mb-4 rounded-full"
-              style={{ backgroundColor: theme.colorPalette.secondaryRed }}
-            >
-              <FontAwesomeIcon className="text-2xl text-white" icon={faVideo} />
-            </div>
-            <h6 className="mb-2 font-semibold text-2xl leading-5">
-              CCTV Solutions
-            </h6>
-            <p className="mb-3 text-sm">
-              Securing peace of mind with our advanced CCTV solutions for
-              comprehensive and reliable surveillance.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 

@@ -15,4 +15,7 @@ module.exports = {
     },
   },
   plugins: [],
+  experimental: {
+    applyComplexClasses: true, // Enable support for custom properties in responsive variants
+  },
 };

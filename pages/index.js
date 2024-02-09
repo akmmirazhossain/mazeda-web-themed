@@ -19,7 +19,7 @@ function Home() {
       <main>
         <Navbar />
         <HeroSection />
-        <div className="container mx-auto light-theme px-4 sm:px-5 md:px-6 lg:p-4 max-w-7xl pt-10 ">
+        <div className="container_akm">
           <ServicesSection />
           <LinksSection />
           <PackagesSection />

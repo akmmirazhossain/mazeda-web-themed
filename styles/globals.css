@@ -37,7 +37,8 @@
 body {
 
 background: #f9f9f9;
-
+font-family: 'Inter', sans-serif;
+color: #181818;
 
 }
 
@@ -62,6 +63,15 @@ background: #f9f9f9;
   font-family: 'shfont', sans-serif;
   
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 
 /* SWIPER JS */
