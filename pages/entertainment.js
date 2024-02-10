@@ -14,10 +14,10 @@ const CoveragePage = () => {
         <div className="container mx-auto light-theme px-4 sm:px-5 md:px-6 lg:p-4  max-w-7xl my-4 sm:my-8 md:my-12 lg:my-16 xl:my-20">
           {/* <AboutSection /> */}
           <>
-            <section className="text-gray-600 body-font">
+            <section className="body-font">
               <div className="container px-5 py-24 mx-auto">
                 <div className="flex  -m-4  justify-center items-center ">
-                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full border shadow mx-2">
+                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full border box_round_shadow mx-2">
                     <Link
                       target="_blank"
                       href="http://172.22.22.101/home/list_files.php?link=data102.mazedanetworks.net/s1d4/&parent=Latest%20Uploads&cat_name=Latest%20Week"
@@ -38,7 +38,7 @@ const CoveragePage = () => {
                     </div>
                   </div>
 
-                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full border shadow mx-2">
+                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full border box_round_shadow mx-2">
                     <Link target="_blank" href="http://172.22.22.100">
                       <div className="flex justify-center items-center">
                         <Image
@@ -56,7 +56,7 @@ const CoveragePage = () => {
                     </div>
                   </div>
 
-                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full border shadow mx-2">
+                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full border box_round_shadow mx-2">
                     <Link target="_blank" href="http://172.22.22.10:32400/">
                       <div className="flex justify-center items-center">
                         <Image

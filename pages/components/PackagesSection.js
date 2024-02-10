@@ -10,19 +10,19 @@ import Link from "next/link";
 const pricingData = [
   {
     type: "BRONZE",
-    speed: "20 Mbps",
+    speed: "20",
     price: "৳700",
     features: ["Up to 30 Mbps", "Ideal for 2 concurrent users"],
   },
   {
     type: "SILVER",
-    speed: "30 Mbps",
+    speed: "30",
     price: "৳1000",
     features: ["Up to 40 Mbps", "Ideal for 3 concurrent users"],
   },
   {
     type: "GOLD",
-    speed: "35 Mbps",
+    speed: "35",
     price: "৳1200",
     features: [
       "Up to 50 Mbps",
@@ -34,7 +34,7 @@ const pricingData = [
 
   {
     type: "PLATINUM",
-    speed: "45 Mbps",
+    speed: "45",
     price: "৳1500",
     features: [
       "Up to 60 Mbps",
@@ -46,7 +46,7 @@ const pricingData = [
 
   {
     type: "DIAMOND",
-    speed: "60 Mbps",
+    speed: "60",
     price: "৳2000",
     features: [
       "Up to 80 Mbps",
@@ -59,7 +59,7 @@ const pricingData = [
 
   {
     type: "ULTRA",
-    speed: "80 Mbps",
+    speed: "80",
     price: "৳3000",
     features: [
       "Up to 100 Mbps",
@@ -72,7 +72,7 @@ const pricingData = [
 
   {
     type: "INFINITE",
-    speed: "110 Mbps",
+    speed: "110",
     price: "৳4000",
     features: [
       "Up to 150 Mbps",
@@ -97,13 +97,14 @@ const pricingData = [
   },
   {
     type: "SINGLE",
-    speed: "7 Mbps",
+    speed: "7",
     price: "৳500",
     features: ["Up to 15 Mbps", "Ideal for 1 concurrent user"],
   },
 ];
 
 const features = [
+  "Fiber optic connection",
   "4k Youtube, Facebook and more",
   "Gaming cache (100 Mbps)",
   "FTP access (Over 11,500 Movies)",
@@ -150,18 +151,21 @@ const PackagesSection = () => {
                   <h2 className="text-sm tracking-widest title-font mb-1 font-medium">
                     {pricing.type}
                   </h2>
-                  <div className="flex justify-between border-b border-gray-200 pb-4 mb-4 ">
-                    <span className="text-4xl text-gray-900 leading-none">
-                      {pricing.speed}
-                    </span>
-                    <span className="text-2xl text-gray-900  inline-block align-baseline leading-none">
-                      {pricing.price}
-                    </span>
+                  <div className="flex justify-between  border-b  pb-4 mb-4 ">
+                    <div className="flex flex-row">
+                      <p className="text-5xl  leading-none">{pricing.speed}</p>
+                      <p className="flex items-end">Mbps</p>
+                    </div>
+                    <div>
+                      <p className="text-2xl inline-block align-baseline leading-none">
+                        {pricing.price}
+                      </p>
+                    </div>
                   </div>
 
                   <div className="mb-4">
                     {pricing.features.map((feature, idx) => (
-                      <p key={idx} className="flex mb-2">
+                      <div key={idx} className="flex mb-2">
                         <div className="mr-2 text-white rounded-full">
                           <FontAwesomeIcon
                             icon={faCircleCheck}
@@ -169,7 +173,7 @@ const PackagesSection = () => {
                           />
                         </div>
                         {feature}
-                      </p>
+                      </div>
                     ))}
                   </div>
 

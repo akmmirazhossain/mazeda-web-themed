@@ -93,6 +93,20 @@
 }
 
 
+.pad_akm {
+    @apply p-4;
+
+    @screen sm {
+        @apply p-5;
+    }
+
+    @screen md {
+        @apply p-2;
+    }
+
+}
+
+
 .box_round_shadow {
     @apply p-5 rounded-2xl shadow-xl bg-white;
 
@@ -128,4 +142,25 @@
     // @screen xl {
     //     @apply ;
     // }
+}
+
+
+.nav_space_akm {
+    @apply mt-10;
+
+    @screen sm {
+        @apply mt-10;
+    }
+
+    @screen md {
+        @apply mt-10;
+    }
+
+    @screen lg {
+        @apply mt-10;
+    }
+
+    @screen xl {
+        @apply mt-10;
+    }
 }
