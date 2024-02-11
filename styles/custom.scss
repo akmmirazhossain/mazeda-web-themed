@@ -1,3 +1,5 @@
+/*FONT STYLES*/
+
 .heading_akm {
     @apply text-2xl py-6 font-semibold tracking-tight text-center ;
 
@@ -12,12 +14,12 @@
     }
 
     @screen xl {
-        @apply text-4xl py-7;
+        @apply text-4xl py-9;
     }
 }
 
 
-.subheading_akm {
+.caption_akm {
     @apply text-xl py-1 font-semibold tracking-tight;
 
     @screen sm {
@@ -37,6 +39,26 @@
     }
 }
 
+
+.subheading_akm {
+    @apply text-xl py-1 font-semibold tracking-tight;
+
+    @screen sm {
+        // @apply text-2xl;
+    }
+
+    @screen md {
+        // @apply text-2xl ;
+    }
+
+    @screen lg {
+        @apply text-2xl;
+    }
+
+    @screen xl {
+        @apply text-2xl;
+    }
+}
 
 .body_text_akm {
     @apply text-base ;

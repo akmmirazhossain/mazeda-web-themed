@@ -5,6 +5,7 @@ import Image from "next/image";
 function AboutSection() {
   return (
     <section className="section_akm">
+      <h1 className="heading_akm">About Mazeda Networks</h1>
       <div className="flex flex-col sm:flex-row gap_akm">
         <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8 box_round_shadow">
           <div className=" rounded-full inline-flex items-center justify-center  text-gray-400">
@@ -17,7 +18,6 @@ function AboutSection() {
           </div>
         </div>
         <div className="sm:w-2/3 sm:pl-8 sm:py-8  box_round_shadow   mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-          <h1 className="text-3xl border-b pb-2">About Mazeda Networks</h1>
           <div className=" body-font">
             <div className="container mx-auto py-8">
               <p className="text-lg leading-relaxed mb-8">

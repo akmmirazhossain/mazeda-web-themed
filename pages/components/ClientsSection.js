@@ -2,13 +2,9 @@ import Image from "next/image";
 
 const ClientsSection = () => {
   return (
-    <div className="my-20">
-      <div className="pb-8 mb-4 text-center mx-auto">
-        <h1 className="text-3xl  leading-none font-medium">
-          Our Successful Partners
-        </h1>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-4 py-4">
+    <section className="section_akm">
+      <div className="heading_akm">Our Successful Partners</div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap_akm pad_akm">
         {" "}
         {/* Adjust gap as needed */}
         <div className="flex items-center justify-center h-full">
@@ -52,7 +48,7 @@ const ClientsSection = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

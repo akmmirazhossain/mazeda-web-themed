@@ -10,65 +10,61 @@ const ContactPage = () => {
       <main>
         <Navbar />
 
-        <div className="container mx-auto light-theme px-4 sm:px-5 md:px-6  max-w-7xl my-4 sm:my-8 md:my-12 lg:my-16 xl:my-20">
-          <div className="container px-5 pb-6 mx-auto flex flex-col ">
-            <div className="lg:w-4/6 mx-auto">
-              <div className="flex flex-col sm:flex-row mt-10">
-                <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                  <div className=" rounded-full inline-flex items-center justify-center  text-gray-400">
-                    <Image
-                      src="/images/call-center.webp"
-                      width={256}
-                      height={256}
-                      alt="house"
-                    />
-                  </div>
-                </div>
-                <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                  <h1 className="text-3xl border-b pb-2">Contact Us</h1>
-                  <div className="text-gray-600 body-font">
-                    <div className="container mx-auto py-8">
-                      <p className="mb-1 bg-cyan-200 p-2 rounded font-medium text-xl">
-                        {" "}
-                        Inqueries: +8809613-334455{" "}
-                      </p>
-                      <p className="mb-1 bg-amber-100 p-2 rounded font-medium text-xl">
-                        {" "}
-                        Support: +88 09613 334455
-                      </p>
+        <div className="container_akm nav_space_akm">
+          <section className="section_akm">
+            <h1 className="heading_akm">Contact</h1>
+            <div className="flex flex-col sm:flex-row gap_akm">
+              <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8 box_round_shadow">
+                <Image
+                  src="/images/call-center.png"
+                  width={400}
+                  height={533}
+                  alt="house"
+                  className="object-cover rounded-2xl"
+                />
+              </div>
+              <div className="sm:w-2/3 sm:pl-8 sm:py-8 box_round_shadow mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <div className="container mx-auto py-8">
+                  <p className="mb-1 bg-cyan-300 pad_akm rounded-2xl font-medium text-xl">
+                    {" "}
+                    Inqueries: +8809613-334455
+                  </p>
+                  <p className="mb-1 bg-orange-300 pad_akm rounded-2xl  font-medium text-xl">
+                    {" "}
+                    Support: +88 09613 334455
+                  </p>
 
-                      <p className="mb-6 bg-green-200 p-2 rounded font-medium text-xl">
-                        {" "}
-                        New Connection: +88 09613 334455
-                      </p>
-                      <p className="mb-6">
-                        Headquarters Address: House # 123, Flat # B4, Road #
-                        13/A, West Dhanmondi, Dhaka. mazeda@mazedanetworks.net
-                      </p>
-                      <p>
-                        Facebook Page:{" "}
-                        <Link
-                          target="_blank"
-                          href="https://www.facebook.com/mazedanetltd"
-                        >
-                          https://www.facebook.com/mazedanetltd
-                        </Link>
-                      </p>
-                      <p>
-                        Facebook Group:{" "}
-                        <Link
-                          target="_blank"
-                          href="https://www.facebook.com/groups/mazedabdserver/"
-                        >
-                          https://www.facebook.com/groups/mazedabdserver/
-                        </Link>
-                      </p>
-                    </div>
-                  </div>
+                  <p className="mb-6 bg-green-300 pad_akm rounded-2xl  font-medium text-xl">
+                    {" "}
+                    New Connection: +88 09613 334455
+                  </p>
+                  <p className="mb-6">
+                    <span className="font-bold">Headquarters Address:</span>{" "}
+                    House # 123, Flat # B4, Road # 13/A, West Dhanmondi, Dhaka.
+                    mazeda@mazedanetworks.net
+                  </p>
+                  <p>
+                    <span className="font-bold">Facebook Page: </span>{" "}
+                    <Link
+                      target="_blank"
+                      href="https://www.facebook.com/mazedanetltd"
+                    >
+                      facebook.com/mazedanetltd
+                    </Link>
+                  </p>
+                  <p>
+                    <span className="font-bold">Facebook Group: </span>{" "}
+                    <Link
+                      target="_blank"
+                      href="https://www.facebook.com/groups/mazedabdserver/"
+                    >
+                      facebook.com/groups/mazedabdserver
+                    </Link>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
         <Footer />
       </main>

@@ -39,7 +39,7 @@ const LinkSection = () => {
                 className="mb-4 rounded-2xl"
               />
 
-              <h2 className="subheading_akm">{item.count}</h2>
+              <h2 className="caption_akm">{item.count}</h2>
             </div>
           </Link>
         ))}
