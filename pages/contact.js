@@ -12,7 +12,14 @@ const ContactPage = () => {
 
         <div className="container_akm nav_space_akm">
           <section className="section_akm">
-            <h1 className="heading_akm">Contact</h1>
+            <div className="text-center">
+              <h1 className="heading_akm">Contact</h1>
+              <p className="subheading_akm pb-2">
+                We&apos;re here for you 24/7, don&apos;t hesitate to call any of
+                our numbers at any time.
+              </p>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap_akm">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8 box_round_shadow">
                 <Image

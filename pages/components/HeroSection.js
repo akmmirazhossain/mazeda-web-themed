@@ -35,10 +35,10 @@ const HeroSection = () => {
           <div className="container mx-auto sm:px-5 md:px-6 lg:px-4  max-w-7xl text-white h-full h-600 lg:h-600">
             <div className="grid grid-rows-8 h-full">
               <div className="row-span-3 flex flex-col justify-end items-center text-[#03738C] text-4xl sm:text-5xl">
-                <p className="text-center  font-medium bg-white bg-opacity-50  p-2  rounded-lg">
+                <p className="text-center  font-semibold bg-white bg-opacity-50  p-2  rounded-lg">
                   Dhaka&apos;s fastest ISP
                 </p>
-                <p className="text-center font-medium bg-white bg-opacity-50  p-2  rounded-lg">
+                <p className="text-center font-semibold bg-white bg-opacity-50  p-2  rounded-lg">
                   with 99.99% uptime
                 </p>
               </div>
