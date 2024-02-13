@@ -17,14 +17,32 @@ const HeroSection = () => {
       pagination={{
         dynamicBullets: true,
       }}
-      // autoplay={{
-      //   delay: 5000,
-      //   disableOnInteraction: false,
-      //   pauseOnMouseEnter: false,
-      // }}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false,
+      }}
       modules={[EffectFade, Pagination, Autoplay]}
       loop={true}
     >
+      {/* <SwiperSlide className="bg-secondary">
+        <div
+          className="bg-cover bg-center  "
+          style={{
+            backgroundImage: 'url("/images/slider/slide-bg-internet.png")',
+          }}
+        >
+          <div className="container_akm mx-auto h-600">
+            <div class="grid grid-cols-2 gap-4">
+              <div class=" p-4">Column 1</div>
+              <div class="grid grid-cols-2  p-4  bg-gray-300 -skew-x-12 h-96">
+                {" "}
+                awd adw
+              </div>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide> */}
       <SwiperSlide className="bg-secondary">
         <div
           className="bg-cover bg-center  "
@@ -34,13 +52,15 @@ const HeroSection = () => {
         >
           <div className="container mx-auto sm:px-5 md:px-6 lg:px-4  max-w-7xl text-white h-full h-600 lg:h-600">
             <div className="grid grid-rows-8 h-full">
-              <div className="row-span-3 flex flex-col justify-end items-center text-[#03738C] text-4xl sm:text-5xl">
-                <p className="text-center  font-semibold bg-white bg-opacity-50  p-2  rounded-lg">
-                  Dhaka&apos;s fastest ISP
-                </p>
-                <p className="text-center font-semibold bg-white bg-opacity-50  p-2  rounded-lg">
-                  with 99.99% uptime
-                </p>
+              <div className="row-span-3 flex flex-col justify-end items-center text-[#03738C]  -skew-x-12">
+                <div className="text-center font-semibold bg-white bg-opacity-70  p-3   text-4xl sm:text-5xl">
+                  <p className="skew-x-12">Welcome to Mazeda Networks!</p>
+                </div>
+                <div className="text-center font-semibold bg-white bg-opacity-70  p-2  text-2xl sm:text-3xl">
+                  <p className="skew-x-12">
+                    Your Gateway to Seamless Connectivity.
+                  </p>
+                </div>
               </div>
 
               <div className="flex row-span-5 justify-center md:justify-between ">
@@ -54,6 +74,18 @@ const HeroSection = () => {
                     className="transform -scale-x-100 pt-4"
                   />
                 </div>
+                <div className=" h-fit  text-center text-[#03738C] -skew-x-12 bg-white lg:w-2/4 bg-opacity-70 p-2 lg:p-4 text-xl sm:text-lg">
+                  <p className="skew-x-12">
+                    We are one of the premier internet service providers in
+                    Bangladesh, boasting an expert team with over 23 years of
+                    experience. Our commitment to excellence ensures that we
+                    consistently meet and exceed customer expectations with
+                    agility and efficiency.
+                  </p>
+                  <button class="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-4 py-2">
+                    Learn more
+                  </button>
+                </div>
 
                 <div className="  xl:pr-8">
                   <Image
@@ -62,6 +94,7 @@ const HeroSection = () => {
                     height={512}
                     alt="Slider"
                     loading="eager"
+                    className=""
                   />
                 </div>
               </div>

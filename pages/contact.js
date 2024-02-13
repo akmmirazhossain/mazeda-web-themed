@@ -15,8 +15,8 @@ const ContactPage = () => {
             <div className="text-center">
               <h1 className="heading_akm">Contact</h1>
               <p className="subheading_akm pb-2">
-                We&apos;re here for you 24/7, don&apos;t hesitate to call any of
-                our numbers at any time.
+                Our lines are open 24/7, and we&apos;re always happy to hear
+                from you.
               </p>
             </div>
 
