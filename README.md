@@ -11,5 +11,5 @@ Live Demo: https://mazeda-web.netlify.app/
 Home
 ![Website Screenshot](public/images/home-screenshot.png)
 
-Home Responsive
+
 ![Website Screenshot](public/images/home-screenshot-responsive.png)
