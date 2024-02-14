@@ -7,15 +7,16 @@ function AboutSection() {
     <section className="section_akm">
       <h1 className="heading_akm">About Mazeda Networks</h1>
       <div className="flex flex-col sm:flex-row gap_akm">
-        <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8 box_round_shadow">
-          <div className=" rounded-full inline-flex items-center justify-center  text-gray-400">
-            <Image
-              src="/images/house.png"
-              width={256}
-              height={256}
-              alt="house"
-            />
-          </div>
+        <div
+          className="sm:w-1/3 text-center sm:pr-8 sm:py-8 box_round_shadow min-h-48"
+          style={{
+            backgroundImage: `url('/images/slide-bg-internet.png')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          {/* Content */}
         </div>
         <div className="sm:w-2/3 sm:pl-8 sm:py-8  box_round_shadow   mt-4 pt-4 sm:mt-0 text-center sm:text-left">
           <div className=" body-font">

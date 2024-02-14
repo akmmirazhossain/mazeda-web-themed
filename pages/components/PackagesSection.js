@@ -85,7 +85,7 @@ const pricingData = [
 
   {
     type: "ENTERPRISE",
-    speed: "",
+    speed: "X",
     price: "",
     features: [
       "Speed adjustments will be made based on the overall user count.",
