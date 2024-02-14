@@ -122,14 +122,16 @@ const CoverageBlocks = () => {
       </div>
 
       <div className="relative box_round_shadow mb_akm">
-        <div className="flex items-center">
+        <div
+          className="flex items-center max-w-fit pr-3 cursor-pointer border"
+          onClick={toggleDropdown}
+        >
           <input
             id="region"
             type="text"
             readOnly
             value={selectedOption}
             className="block  px-4 py-2 rounded cursor-pointer focus:outline-none "
-            onClick={toggleDropdown}
           />
           <FontAwesomeIcon
             icon={faChevronDown}
