@@ -101,6 +101,8 @@
 }
 
 
+// SPACINGS
+
 .gap_akm {
     @apply gap-4;
 
@@ -126,6 +128,40 @@
         @apply p-2;
     }
 
+}
+
+
+.mb_akm {
+    @apply mb-4;
+
+    @screen sm {
+        @apply mb-5;
+    }
+
+    @screen md {
+        @apply mb-6;
+    }
+
+}
+
+.nav_space_akm {
+    @apply mt-10;
+
+    @screen sm {
+        @apply mt-10;
+    }
+
+    @screen md {
+        @apply mt-10;
+    }
+
+    @screen lg {
+        @apply mt-10;
+    }
+
+    @screen xl {
+        @apply mt-10;
+    }
 }
 
 
@@ -166,23 +202,3 @@
     // }
 }
 
-
-.nav_space_akm {
-    @apply mt-10;
-
-    @screen sm {
-        @apply mt-10;
-    }
-
-    @screen md {
-        @apply mt-10;
-    }
-
-    @screen lg {
-        @apply mt-10;
-    }
-
-    @screen xl {
-        @apply mt-10;
-    }
-}

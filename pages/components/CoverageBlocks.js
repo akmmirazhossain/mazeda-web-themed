@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faImage } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
-import Link from "next/link";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const data = [
   {
@@ -100,13 +98,78 @@ const data = [
 ];
 
 const CoverageBlocks = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState("Select a region");
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleOptionSelect = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+    // Do something with the selected option
+    console.log("ZZZ SSS");
+  };
+
   return (
     <section className="section_akm">
       <div className="text-center pb-4">
         <h1 className="heading_akm">Our coverage</h1>
         <p className="subheading_akm ">
-          Our network grows daily, so stay tuned for updates right here.
+          Our network grows daily, so stay tuned for updates here.
         </p>
+      </div>
+
+      <div className="relative box_round_shadow mb_akm">
+        <div className="flex items-center">
+          <input
+            id="region"
+            type="text"
+            readOnly
+            value={selectedOption}
+            className="block  px-4 py-2 rounded cursor-pointer focus:outline-none "
+            onClick={toggleDropdown}
+          />
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className={`text-gray-400 ml-2 ${
+              isOpen ? "transform rotate-180" : ""
+            }`}
+          />
+        </div>
+        {isOpen && (
+          <div className="absolute w-full mt-1 bg-white rounded-md shadow-lg z-10">
+            <a
+              href="#"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+              onClick={() => handleOptionSelect("Select a region")}
+            >
+              Select a region
+            </a>
+            <a
+              href="#"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+              onClick={() => handleOptionSelect("All over Bangladesh")}
+            >
+              All over Bangladesh
+            </a>
+            <a
+              href="#"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+              onClick={() => handleOptionSelect("Dhaka")}
+            >
+              Dhaka
+            </a>
+            <a
+              href="#"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+              onClick={() => handleOptionSelect("Tangail")}
+            >
+              Tangail
+            </a>
+          </div>
+        )}
       </div>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center gap-4 sm:gap-5 md:gap-6">
