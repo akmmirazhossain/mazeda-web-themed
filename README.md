@@ -6,7 +6,7 @@ Live Demo: https://mazeda-web.netlify.app/
 - Tailwind CSS
 - MidJourney (AI image generator)
 - SwiperJS (Hero Section)
-- Designed by me with Figma
+- Designed by me on Figma
 
 ![Website Screenshot](public/images/home-screenshot.png)
 
