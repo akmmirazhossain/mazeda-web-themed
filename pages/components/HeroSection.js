@@ -17,11 +17,11 @@ const HeroSection = () => {
       pagination={{
         dynamicBullets: true,
       }}
-      autoplay={{
-        delay: 5000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: false,
-      }}
+      // autoplay={{
+      //   delay: 5000,
+      //   disableOnInteraction: false,
+      //   pauseOnMouseEnter: false,
+      // }}
       modules={[EffectFade, Pagination, Autoplay]}
       loop={true}
     >
@@ -53,13 +53,16 @@ const HeroSection = () => {
           <div className="container mx-auto sm:px-5 md:px-6 lg:px-4  max-w-7xl text-white h-full h-600 lg:h-600">
             <div className="grid grid-rows-8 h-full">
               <div className="row-span-3 flex flex-col justify-end items-center text-[#03738C]  -skew-x-12">
-                <div className="text-center font-semibold bg-white bg-opacity-70  p-3   text-4xl sm:text-5xl">
+                <div className="text-center font-semibold bg-white bg-opacity-70  p-3  text-xl sm:text-3xl lg:text-5xl">
                   <p className="skew-x-12">Welcome to Mazeda Networks!</p>
                 </div>
-                <div className="text-center font-semibold bg-white bg-opacity-70  p-2  text-2xl sm:text-3xl">
+                <div className="text-center font-semibold bg-white bg-opacity-70  p-1  text-md sm:text-2xl lg:text-3xl">
                   <p className="skew-x-12">
                     Your Gateway to Seamless Connectivity.
                   </p>
+                  <button class="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-2 py-1 lg:px-4 lg:py-2 lg:hidden">
+                    Learn more
+                  </button>
                 </div>
               </div>
 
@@ -74,7 +77,7 @@ const HeroSection = () => {
                     className="transform -scale-x-100 pt-4"
                   />
                 </div>
-                <div className=" h-fit  text-center text-[#03738C] -skew-x-12 bg-white lg:w-2/4 bg-opacity-70 p-2 lg:p-4 text-xl sm:text-lg">
+                <div className=" h-fit  text-center text-[#03738C] hidden lg:inline-block -skew-x-12 bg-white lg:w-2/4 bg-opacity-70 p-2 lg:p-4 text-xl sm:text-lg">
                   <p className="skew-x-12">
                     We are one of the premier internet service providers in
                     Bangladesh, boasting an expert team with over 23 years of
@@ -82,7 +85,7 @@ const HeroSection = () => {
                     consistently meet and exceed customer expectations with
                     agility and efficiency.
                   </p>
-                  <button class="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-4 py-2">
+                  <button class="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-4 py-2 hidden lg:inline-block">
                     Learn more
                   </button>
                 </div>
