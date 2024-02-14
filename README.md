@@ -8,5 +8,8 @@ Live Demo: https://mazeda-web.netlify.app/
 - SwiperJS (Hero Section)
 - Designed by me on Figma
 
+Home
 ![Website Screenshot](public/images/home-screenshot.png)
 
+Home Responsive 
+![Website Screenshot](public/images/home-screenshot-responsive.png)
