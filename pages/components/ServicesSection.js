@@ -46,7 +46,7 @@ const Services = () => {
                   icon={service.icon}
                 />
               </div>
-              <h6 className="caption_akm">{service.title}</h6>
+              <h6 className="subheading_akm">{service.title}</h6>
               <p className="body_text_akm">{service.description}</p>
             </div>
           </div>
