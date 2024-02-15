@@ -28,6 +28,7 @@ const ContactPage = () => {
                   height={533}
                   alt="house"
                   className="object-cover rounded-2xl"
+                  placeholder="empty"
                 />
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 box_round_shadow mt-4 pt-4 sm:mt-0 text-center sm:text-left">
