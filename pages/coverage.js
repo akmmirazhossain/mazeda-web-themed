@@ -10,7 +10,7 @@ const CoveragePage = () => {
       <main>
         <Navbar />
 
-        <div className="container_akm nav_space_akm">
+        <div className="container_akm nav_space_akm min-h-screen">
           <div>
             <CoverageBlocks />
           </div>
