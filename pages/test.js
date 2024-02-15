@@ -1,67 +1,55 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons"; // Import the FontAwesome ChevronDown icon
+import { useState } from "react";
 
-const DropDown = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("All over Bangladesh");
+const Tabs = () => {
+  const [activeTab, setActiveTab] = useState(1);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const handleOptionSelect = (option) => {
-    setSelectedOption(option);
-    setIsOpen(false);
-    // Do something with the selected option
-    console.log("ZZZ SSS");
+  const handleTabClick = (tabIndex) => {
+    setActiveTab(tabIndex);
   };
 
   return (
-    <div className="relative box_round_shadow">
-      <div className="flex items-center">
-        <input
-          id="region"
-          type="text"
-          readOnly
-          value={selectedOption}
-          className="block w-full px-4 py-2 rounded cursor-pointer focus:outline-none"
-          onClick={toggleDropdown}
+    <div className="max-w-md mx-auto mt-8">
+      <div className="flex border-b border-gray-200">
+        <TabButton
+          title="Tab 1"
+          onClick={() => handleTabClick(1)}
+          isActive={activeTab === 1}
         />
-        <FontAwesomeIcon
-          icon={faChevronDown}
-          className={`text-gray-400 ml-2 ${
-            isOpen ? "transform rotate-180" : ""
-          }`}
+        <TabButton
+          title="Tab 2"
+          onClick={() => handleTabClick(2)}
+          isActive={activeTab === 2}
+        />
+        <TabButton
+          title="Tab 3"
+          onClick={() => handleTabClick(3)}
+          isActive={activeTab === 3}
         />
       </div>
-      {isOpen && (
-        <div className="absolute w-full mt-1 bg-white rounded-md shadow-lg z-10">
-          <a
-            href="#"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-            onClick={() => handleOptionSelect("All over Bangladesh")}
-          >
-            All over Bangladesh
-          </a>
-          <a
-            href="#"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-            onClick={() => handleOptionSelect("Dhaka")}
-          >
-            Dhaka
-          </a>
-          <a
-            href="#"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-            onClick={() => handleOptionSelect("Tangail")}
-          >
-            Tangail
-          </a>
-        </div>
-      )}
+      <div className="mt-4">
+        {activeTab === 1 && <TabContent>Content for Tab 1</TabContent>}
+        {activeTab === 2 && <TabContent>Content for Tab 2</TabContent>}
+        {activeTab === 3 && <TabContent>Content for Tab 3</TabContent>}
+      </div>
     </div>
   );
 };
 
-export default DropDown;
+const TabButton = ({ title, onClick, isActive }) => {
+  return (
+    <button
+      onClick={onClick}
+      className={`${
+        isActive ? "border-b-2 border-blue-500" : ""
+      } flex-grow py-2 px-4 text-sm font-semibold text-gray-700 focus:outline-none`}
+    >
+      {title}
+    </button>
+  );
+};
+
+const TabContent = ({ children }) => {
+  return <div className="p-4">{children}</div>;
+};
+
+export default Tabs;
