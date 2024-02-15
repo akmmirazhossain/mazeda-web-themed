@@ -24,11 +24,9 @@ const ContactPage = () => {
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8 box_round_shadow">
                 <Image
                   src="/images/call-center.png"
-                  width={400}
-                  height={533}
-                  alt="house"
-                  className="object-cover rounded-2xl"
-                  placeholder="empty"
+                  alt="Call center image"
+                  width={800}
+                  height={1067}
                 />
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 box_round_shadow mt-4 pt-4 sm:mt-0 text-center sm:text-left">

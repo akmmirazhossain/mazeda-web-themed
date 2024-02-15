@@ -47,8 +47,8 @@ const Entertainment = () => {
                     <Image
                       src={service.imageSrc}
                       alt={service.altText}
-                      width={120}
-                      height={36}
+                      width={64}
+                      height={64}
                     />
                   </div>
                 </Link>
