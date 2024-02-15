@@ -28,7 +28,7 @@ const Entertainment = () => {
     <main>
       <Navbar />
 
-      <div className="container_akm h-screen nav_space_akm">
+      <div className="container_akm min-h-[80vh] nav_space_akm">
         <section className="section_akm">
           <div className="text-center pb-4">
             <h1 className="heading_akm">Entertainment</h1>
