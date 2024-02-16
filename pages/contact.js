@@ -27,6 +27,7 @@ const ContactPage = () => {
                   alt="Call center image"
                   width={800}
                   height={1067}
+                  className="rounded-2xl"
                 />
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 box_round_shadow mt-4 pt-4 sm:mt-0 text-center sm:text-left">

@@ -59,7 +59,7 @@ const PayBillSection = () => {
             </h6>
             <div className="flex items-center justify-center w-32 h-32 mb-4 rounded-full">
               <Image
-                src="/images/nagad-logo.png"
+                src="/images/logos/nagad-logo.png"
                 width={500}
                 height={500}
                 alt="Slider"
