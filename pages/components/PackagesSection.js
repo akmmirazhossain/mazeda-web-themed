@@ -173,22 +173,28 @@ const PackagesSection = () => {
           ))}
         </div>
         <div className="col-span-1 lg:col-span-3 w-full">
-          <div className="flex xl:p-0 tab_round_shadow">
-            <TabButton
-              title="Standard"
-              onClick={() => handleTabClick(1)}
-              isActive={activeTab === 1}
-            />
-            <TabButton
-              title="Power"
-              onClick={() => handleTabClick(2)}
-              isActive={activeTab === 2}
-            />
-            <TabButton
-              title="Enterprise"
-              onClick={() => handleTabClick(3)}
-              isActive={activeTab === 3}
-            />
+          <div className="grid grid-cols-3  items-center tab_round_shadow">
+            <div className="w-full flex justify-center items-center">
+              <TabButton
+                title="Standard"
+                onClick={() => handleTabClick(1)}
+                isActive={activeTab === 1}
+              />
+            </div>
+            <div className="w-full flex justify-center items-center">
+              <TabButton
+                title="Power"
+                onClick={() => handleTabClick(2)}
+                isActive={activeTab === 2}
+              />
+            </div>
+            <div className="w-full flex justify-center items-center">
+              <TabButton
+                title="Enterprise"
+                onClick={() => handleTabClick(3)}
+                isActive={activeTab === 3}
+              />
+            </div>
           </div>
           <div className="mt-4">
             <TabContent>

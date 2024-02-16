@@ -165,7 +165,7 @@
 }
 
 .tab_round_shadow {
-    @apply px-3 pt-2 pb-0 rounded-t-2xl rounded-b-sm shadow-xl bg-white;
+    @apply px-3 pt-2 pb-0 rounded-2xl shadow-xl bg-white;
 
     @screen md {
         @apply px-3 pt-2 pb-0;
@@ -176,7 +176,7 @@
     }
 
     @screen xl {
-        @apply px-0 pt-2 pb-0;
+        @apply px-3 pt-2 pb-0;
     }
 }
 
