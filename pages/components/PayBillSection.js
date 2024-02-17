@@ -24,9 +24,9 @@ const PayBillSection = () => {
             </h6>
             <div className="flex items-center justify-center w-32 h-32 mb-4 rounded-full">
               <Image
-                src="/images/bkash-logo.png"
-                width={500}
-                height={500}
+                src="/images/logos/bkash-logo.png"
+                width={300}
+                height={174}
                 alt="Slider"
               />
             </div>
@@ -60,8 +60,8 @@ const PayBillSection = () => {
             <div className="flex items-center justify-center w-32 h-32 mb-4 rounded-full">
               <Image
                 src="/images/logos/nagad-logo.png"
-                width={500}
-                height={500}
+                width={300}
+                height={174}
                 alt="Slider"
               />
             </div>
@@ -79,9 +79,9 @@ const PayBillSection = () => {
             </h6>
             <div className="flex items-center justify-center w-32 h-32 mb-4 rounded-full">
               <Image
-                src="/images/visa-logo.png"
-                width={500}
-                height={500}
+                src="/images/logos/visa-logo.png"
+                width={300}
+                height={174}
                 alt="Slider"
               />
             </div>
