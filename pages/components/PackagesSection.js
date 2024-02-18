@@ -92,7 +92,7 @@ const pricingData = [
   },
 
   {
-    type: "ENTERPRISE",
+    type: "SMALL BUSINESS",
     speed: "X",
     price: "",
     features: [
@@ -102,7 +102,7 @@ const pricingData = [
       "Seamless online gaming",
       "Very high priority support",
     ],
-    group: "enterprise",
+    group: "corporate",
   },
   {
     type: "SINGLE",
@@ -143,7 +143,7 @@ const PackagesSection = () => {
         group = "power";
         break;
       case 3:
-        group = "enterprise";
+        group = "corporate";
         break;
       default:
         group = "standard";
@@ -190,7 +190,7 @@ const PackagesSection = () => {
             </div>
             <div className="w-full flex justify-center items-center">
               <TabButton
-                title="Enterprise"
+                title="Corporate"
                 onClick={() => handleTabClick(3)}
                 isActive={activeTab === 3}
               />
