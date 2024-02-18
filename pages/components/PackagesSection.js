@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleCheck,
   faArrowRightLong,
+  faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import theme from "@/config/theme";
 import Link from "next/link";
@@ -171,6 +172,12 @@ const PackagesSection = () => {
               <div>{feature}</div>
             </div>
           ))}
+          <button className=" items-center mt-auto text-center text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-full">
+            <Link href="../files/btrc_tariff_policy_isp.pdf">
+              {" "}
+              BTRC Approved Tariff <FontAwesomeIcon icon={faInfoCircle} />
+            </Link>
+          </button>
         </div>
         <div className="col-span-1 lg:col-span-3 w-full">
           <div className="grid grid-cols-3  items-center tab_round_shadow">
