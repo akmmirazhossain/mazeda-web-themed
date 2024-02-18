@@ -36,26 +36,23 @@ const Entertainment = () => {
               Get 100 Mbps download speeds from these entertainment links.
             </p>
           </div>
-          <div className="flex justify-center items-center ">
+          <div className="grid grid-cols-3 gap-4">
             {EntertainLinks.map((service, index) => (
-              <div
-                key={index}
-                className="lg:w-1/4 md:w-1/2 p-4 w-full border box_round_shadow mx-2"
-              >
-                <Link target="_blank" href={service.link}>
-                  <div className="flex justify-center items-center">
-                    <Image
-                      src={service.imageSrc}
-                      alt={service.altText}
-                      width={64}
-                      height={64}
-                    />
-                  </div>
+              <div key={index} className=" box_round_shadow ">
+                <Link
+                  target="_blank"
+                  href={service.link}
+                  className="flex justify-center items-center"
+                >
+                  <Image
+                    src={service.imageSrc}
+                    alt={service.altText}
+                    width={64}
+                    height={64}
+                  />
                 </Link>
                 <div className="mt-4 text-center">
-                  <h2 className="text-gray-900 title-font text-3xl font-medium">
-                    {service.altText}
-                  </h2>
+                  <h2 className="subheading_akm">{service.altText}</h2>
                 </div>
               </div>
             ))}
