@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronDown,
+  faSpinner,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
 
 const initialData = [
   {
@@ -125,6 +129,7 @@ const CoverageBlocks = () => {
   const [selectedOption, setSelectedOption] = useState("Select a region");
   const [filteredData, setFilteredData] = useState(initialData);
   const [loading, setLoading] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -148,19 +153,54 @@ const CoverageBlocks = () => {
       setLoading(false); // Hide loading spinner
     }, 500); // Wait for 0.5 seconds before updating data
   };
+
+  const handleSearchChange = (e) => {
+    setSearchValue(e.target.value);
+    // Filter data based on search value
+    const filtered = initialData.filter(
+      (item) =>
+        item.area.toLowerCase().includes(searchValue.toLowerCase()) ||
+        item.address.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    setFilteredData(filtered);
+  };
+
+  const highlightKeywords = (text) => {
+    const keywords = searchValue.toLowerCase().split(/\s+/).filter(Boolean); // Split by whitespace and remove empty strings
+    let highlightedText = text;
+    keywords.forEach((keyword) => {
+      highlightedText = highlightedText.replace(
+        new RegExp(keyword, "gi"),
+        (match) => `<span class="highlighted">${match}</span>`
+      );
+    });
+    return <span dangerouslySetInnerHTML={{ __html: highlightedText }} />;
+  };
+
   return (
     <section className="section_akm">
       <div className="text-center pb-4">
         <h1 className="heading_akm">Our coverage</h1>
-        <p className="subheading_akm ">
+        <p className="subheading_akm">
           Our network grows daily, so stay tuned for updates here.
         </p>
       </div>
 
-      <div className=" box_round_shadow mb_akm ">
-        <div className="relative w-full md:w-1/3">
+      <div className="grid grid-cols-1 md:grid-cols-3  box_round_shadow mb_akm gap_akm">
+        <div className="w-full flex items-center pr-3 cursor-pointer border rounded-2xl">
+          <input
+            type="text"
+            placeholder="Search a location"
+            value={searchValue}
+            onChange={handleSearchChange}
+            className="block px-4 py-2 w-full rounded-2xl cursor-pointer focus:outline-none"
+            onClick={() => setSearchValue("")} // Clear placeholder text on click
+          />
+          <FontAwesomeIcon icon={faSearch} className="text-gray-400 ml-2" />
+        </div>
+        <div className="relative w-full">
           <div
-            className="flex items-center  pr-3 cursor-pointer border"
+            className="flex items-center  pr-3 cursor-pointer border rounded-2xl"
             onClick={toggleDropdown}
           >
             <input
@@ -168,7 +208,7 @@ const CoverageBlocks = () => {
               type="text"
               readOnly
               value={selectedOption}
-              className="block  px-4 py-2 w-full rounded cursor-pointer focus:outline-none "
+              className="block px-4 py-2 w-full rounded-2xl cursor-pointer focus:outline-none "
             />
             <FontAwesomeIcon
               icon={faChevronDown}
@@ -206,7 +246,7 @@ const CoverageBlocks = () => {
       </div>
       {loading ? (
         // Show loading spinner if loading is true
-        <div className="body_text_akm text-center ">
+        <div className="body_text_akm text-center">
           Loading <FontAwesomeIcon icon={faSpinner} className="animate-spin" />
         </div>
       ) : (
@@ -214,9 +254,9 @@ const CoverageBlocks = () => {
           {filteredData.map((item, index) => (
             <div key={index} className="box_round_shadow">
               <h2 className="title-font text-2xl font-medium mb-4">
-                {item.area}
+                {highlightKeywords(item.area)}
               </h2>
-              <p>{item.address}</p>
+              <p>{highlightKeywords(item.address)}</p>
             </div>
           ))}
         </div>

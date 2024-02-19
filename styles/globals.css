@@ -42,8 +42,11 @@ color: #181818;
 
 }
 
-
-
+/* COVERAGE SEARCH */
+.highlighted {
+  background-color: #4b4b4b;
+  color: #fff;
+}
 
 
 .light-theme {
