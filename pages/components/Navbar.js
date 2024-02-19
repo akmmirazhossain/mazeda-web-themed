@@ -43,6 +43,9 @@ function Navbar() {
                 <Link href="/packages">Packages</Link>
               </li>
               <li>
+                <Link href="/offers">Offers</Link>
+              </li>
+              <li>
                 <Link href="/coverage">Coverage</Link>
               </li>
               <li>
@@ -110,6 +113,9 @@ function Navbar() {
             </Link>
             <li>
               <Link href="/packages">Packages</Link>
+            </li>
+            <li>
+              <Link href="/offers">Offers</Link>
             </li>
             <li>
               <Link href="/coverage">Coverage</Link>
