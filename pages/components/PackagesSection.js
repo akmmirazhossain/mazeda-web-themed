@@ -119,7 +119,7 @@ const pricingData = [
     group: "corporate",
   },
   {
-    type: "UNICORN",
+    type: "ENTERPRISE",
     speed: "100+",
     price: "৳9000",
     features: [

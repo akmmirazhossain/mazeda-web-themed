@@ -4,7 +4,9 @@ import {
   faChevronDown,
   faSpinner,
   faSearch,
+  faMapLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const initialData = [
   {
@@ -252,11 +254,22 @@ const CoverageBlocks = () => {
       ) : (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-center gap-4 sm:gap-5 md:gap-6">
           {filteredData.map((item, index) => (
-            <div key={index} className="box_round_shadow">
-              <h2 className="title-font text-2xl font-medium mb-4">
-                {highlightKeywords(item.area)}
-              </h2>
-              <p>{highlightKeywords(item.address)}</p>
+            <div key={index} className="box_round_shadow flex flex-col">
+              <div>
+                <h2 className="title-font text-2xl font-medium mb-4">
+                  {highlightKeywords(item.area)}
+                </h2>
+                <p>{highlightKeywords(item.address)}</p>
+              </div>
+              <button className=" items-center mt-auto text-center text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-full">
+                <Link
+                  href="https://maps.app.goo.gl/dKJchAqp2c4xFLok6"
+                  target="_blank"
+                >
+                  {" "}
+                  View on map <FontAwesomeIcon icon={faMapLocationDot} />
+                </Link>
+              </button>
             </div>
           ))}
         </div>
