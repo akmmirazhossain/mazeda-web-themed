@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const logos = [
-  "/images/logos/CookSmart.jpeg",
-  "/images/logos/FlavorFusion.jpeg",
-  "/images/logos/VogueVista.png",
-  "/images/logos/NexusDynamics.png",
-  "/images/logos/HealthHavenClinic.jpeg",
+  "/images/logos/bengal-foundation.png",
+  "/images/logos/creative-it.png",
+  "/images/logos/oriental-group.png",
+  "/images/logos/freeland.png",
+  "/images/logos/inglot.png",
 ];
 
 const ClientsSection = () => {

@@ -87,15 +87,14 @@ function Navbar() {
               </li>
             </ul>
 
-            <div className="lg:hidden">
-              {/* Hamburger menu icon */}
-              <button
-                onClick={toggleMenu}
-                className="p-2  hover:text-deep-purple-accent-400 focus:outline-none focus:text-deep-purple-accent-400"
-              >
+            <button
+              onClick={toggleMenu}
+              className="p-2  hover:text-deep-purple-accent-400 focus:outline-none focus:text-deep-purple-accent-400"
+            >
+              <div className="lg:hidden">
                 <FontAwesomeIcon className="text-lg" icon={faBars} />
-              </button>
-            </div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
