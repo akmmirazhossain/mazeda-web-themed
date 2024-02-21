@@ -42,9 +42,9 @@ function Navbar() {
               <li>
                 <Link href="/packages">Packages</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/offers">Offers</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/coverage">Coverage</Link>
               </li>
@@ -113,9 +113,9 @@ function Navbar() {
             <li>
               <Link href="/packages">Packages</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/offers">Offers</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/coverage">Coverage</Link>
             </li>
