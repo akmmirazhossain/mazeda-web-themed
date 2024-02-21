@@ -11,7 +11,7 @@ const logos = [
 const ClientsSection = () => {
   return (
     <section className="section_akm">
-      <div className="heading_akm">Our Successful Partners</div>
+      <div className="heading_akm">Our Successful Clients</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap_akm pad_akm box_round_shadow">
         {" "}
         {logos.map((logo, index) => (
