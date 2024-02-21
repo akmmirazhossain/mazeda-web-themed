@@ -192,7 +192,7 @@ const CoverageBlocks = () => {
     keywords.forEach((keyword) => {
       highlightedText = highlightedText.replace(
         new RegExp(keyword, "gi"),
-        (match) => `<span class="highlighted">${match}</span>`
+        (match) => `<span className="highlighted">${match}</span>`
       );
     });
     return <span dangerouslySetInnerHTML={{ __html: highlightedText }} />;

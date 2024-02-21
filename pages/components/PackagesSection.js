@@ -11,21 +11,21 @@ import Link from "next/link";
 
 const pricingData = [
   {
-    type: "BRONZE",
+    type: "TWO",
     speed: "20",
     price: "৳700",
     features: ["Up to 30 Mbps", "Ideal for 2 concurrent users"],
     group: "standard",
   },
   {
-    type: "SILVER",
+    type: "THREE",
     speed: "30",
     price: "৳1000",
     features: ["Up to 40 Mbps", "Ideal for 3 concurrent users"],
     group: "standard",
   },
   {
-    type: "GOLD",
+    type: "FOUR",
     speed: "35",
     price: "৳1200",
     features: [
@@ -38,7 +38,7 @@ const pricingData = [
   },
 
   {
-    type: "PLATINUM",
+    type: "FIVE",
     speed: "45",
     price: "৳1500",
     features: [
@@ -51,7 +51,7 @@ const pricingData = [
   },
 
   {
-    type: "DIAMOND",
+    type: "SIX",
     speed: "60",
     price: "৳2000",
     features: [
@@ -65,7 +65,7 @@ const pricingData = [
   },
 
   {
-    type: "ULTRA",
+    type: "SEVEN",
     speed: "80",
     price: "৳3000",
     features: [
@@ -79,7 +79,7 @@ const pricingData = [
   },
 
   {
-    type: "INFINITE",
+    type: "EIGHT",
     speed: "110",
     price: "৳4000",
     features: [
@@ -132,7 +132,7 @@ const pricingData = [
     group: "corporate",
   },
   {
-    type: "SINGLE",
+    type: "ONE",
     speed: "7",
     price: "৳500",
     features: ["Up to 15 Mbps", "Ideal for 1 concurrent user"],

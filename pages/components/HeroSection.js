@@ -60,7 +60,7 @@ const HeroSection = () => {
                   <p className="skew-x-12">
                     Your Gateway to Seamless Connectivity.
                   </p>
-                  <button class="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-2 py-1 lg:px-4 lg:py-2 lg:hidden">
+                  <button className="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-2 py-1 lg:px-4 lg:py-2 lg:hidden">
                     Know more
                   </button>
                 </div>
@@ -85,7 +85,7 @@ const HeroSection = () => {
                     consistently meet and exceed customer expectations with
                     agility and efficiency.
                   </p>
-                  <button class="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-4 py-2 hidden lg:inline-block">
+                  <button className="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-4 py-2 hidden lg:inline-block">
                     Know more
                   </button>
                 </div>
