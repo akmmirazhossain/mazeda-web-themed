@@ -18,7 +18,7 @@ function Navbar() {
   };
 
   return (
-    <nav className=" fixed mx-auto border w-full top-0 z-10 bg-[#FFFFFF] bg-opacity-90">
+    <nav className=" fixed mx-auto border w-full top-0 z-40 bg-[#FFFFFF] bg-opacity-90">
       <div className="py-2 lg:py-4 mx-auto px-6 lg:px-4 max-w-7xl ">
         <div className=" flex items-center justify-between">
           <div className="flex items-center">

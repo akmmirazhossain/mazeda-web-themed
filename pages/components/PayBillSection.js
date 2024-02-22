@@ -1,103 +1,240 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHouseSignal,
-  faBriefcase,
-  faVideo,
+  faRightToBracket,
+  faLightbulb,
+  faCalendarDays,
+  faGrip,
+  faCheck,
 } from "@fortawesome/free-solid-svg-icons";
-import theme from "../../config/theme";
 
 const PayBillSection = () => {
   return (
-    <div className=" py-10 mx-auto  lg:py-16">
-      <div className="pb-8 mb-4 text-center mx-auto">
-        <h1 className="text-3xl  leading-none font-medium">
-          Seeking payment options?
-        </h1>
+    <section className="section_akm">
+      <div className="text-center pb-4">
+        <h1 className="heading_akm">Seeking payment options?</h1>
       </div>
 
-      <div className="grid gap-4 sm:gap-5 md:gap-6 sm:grid-cols-2  md:grid-cols-3 ">
-        <div className="flex flex-col justify-between p-5 rounded-2xl  shadow-xl bg-white">
-          <div>
-            <h6 className="mb-2 font-semibold text-xl leading-5">
-              Bkash Payment Steps
-            </h6>
-            <div className="flex items-center justify-center w-32 h-32 mb-4 rounded-full">
-              <Image
-                src="/images/logos/bkash-logo.png"
-                width={300}
-                height={174}
-                alt="Slider"
-              />
-            </div>
+      <div className="box_round_shadow mb_akm">
+        We offer a comprehensive range of payment solutions, find your best
+        suited option to make a safe online transection.
+      </div>
 
-            <div>
-              <p>
-                1. Press <strong>*247#</strong>
+      <div className="box_round_shadow mb_akm">
+        <div className="mb_akm">
+          <p className="subheading_akm">Steps for Bkash app payment</p>
+        </div>
+        <div className="">
+          <div className="flex relative pb-12">
+            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+            </div>
+            <div className="steps_circle_akm">
+              <FontAwesomeIcon icon={faRightToBracket} />
+            </div>
+            <div className="flex-grow pl-4">
+              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                STEP 1
+              </h2>
+              <p className="leading-relaxed">
+                Sign in to your bKash account using your account PIN, then
+                select the <span className="font-bold"> Pay Bill </span> option.
               </p>
-              <p>2. Select Payment Option</p>
-              <p>3. Enter Merchant bKash Wallet No:</p>
-              <ul>
-                <li>Dhanmondi: 01883002030</li>
-                <li>Banani: 01883002052</li>
-                <li>Basundhara: 01883002057</li>
-                <li>Kallyanpur: 01883002058</li>
-              </ul>
-              <p>4. Enter Amount: Like 1000</p>
-              <p>5. Enter Reference No (Customer ID): 12345</p>
-              <p>6. Enter Counter No: 1</p>
-              <p>7. Enter Menu PIN to Confirm: 1234</p>
-              <p>8. Payment successful</p>
             </div>
           </div>
-        </div>
-
-        <div className="flex flex-col justify-between p-5 rounded-2xl  shadow-xl bg-white">
-          <div>
-            <h6 className="mb-2 font-semibold text-xl leading-5">
-              Nagad Payment Steps
-            </h6>
-            <div className="flex items-center justify-center w-32 h-32 mb-4 rounded-full">
-              <Image
-                src="/images/logos/nagad-logo.png"
-                width={300}
-                height={174}
-                alt="Slider"
-              />
+          <div className="flex relative pb-12">
+            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
             </div>
-
-            <div>
-              <p>Steps for Nagad payment goes here...</p>
+            <div className="steps_circle_akm">
+              <FontAwesomeIcon icon={faLightbulb} />
+            </div>
+            <div className="flex-grow pl-4">
+              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                STEP 2
+              </h2>
+              <p className="leading-relaxed">
+                In the "Pay Bill" section, find and tap on{" "}
+                <span className="font-bold"> Mazeda Networks Ltd. </span> to
+                proceed.
+              </p>
             </div>
           </div>
-        </div>
-
-        <div className="flex flex-col justify-between p-5 rounded-2xl  shadow-xl bg-white">
-          <div>
-            <h6 className="mb-2 font-semibold text-xl leading-5">
-              Visa/MasterCard Payment Steps
-            </h6>
-            <div className="flex items-center justify-center w-32 h-32 mb-4 rounded-full">
-              <Image
-                src="/images/logos/visa-logo.png"
-                width={300}
-                height={174}
-                alt="Slider"
-              />
+          <div className="flex relative pb-12">
+            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
             </div>
-
-            <div>
-              <p>1. You can pay using cards such as AMEX and DBBL Nexus</p>
-              <p>
-                2. Net banking options available for AB Bank, Islami Bank
-                Bangladesh, City Bank, MTB, and Bank Asia.
+            <div className="steps_circle_akm">
+              <FontAwesomeIcon icon={faCalendarDays} />
+            </div>
+            <div className="flex-grow pl-4">
+              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                STEP 3
+              </h2>
+              <p className="leading-relaxed">
+                From the dropdown menu,{" "}
+                <span className="font-bold"> choose the month </span>for which
+                you wish to pay your bill and enter your
+                <span className="font-bold"> customer ID</span>, then tap on{" "}
+                <span className="font-bold"> Proceed to pay </span>.
               </p>
-              <p>3. Reach our support team: +88 09613 334455</p>
+            </div>
+          </div>
+          <div className="flex relative pb-12">
+            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+            </div>
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="steps_circle_akm">
+                <FontAwesomeIcon icon={faGrip} />
+              </div>
+            </div>
+            <div className="flex-grow pl-4">
+              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                STEP 4
+              </h2>
+              <p className="leading-relaxed">
+                Select your package and make the payment.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex relative">
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="steps_circle_akm">
+                <FontAwesomeIcon icon={faCheck} />
+              </div>
+            </div>
+            <div className="flex-grow pl-4">
+              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                FINISH
+              </h2>
+              <p className="leading-relaxed">
+                Upon completion, a payment successful message will confirm that
+                all steps were executed correctly.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div className="box_round_shadow mb_akm">
+        <div className="mb_akm">
+          <p className="subheading_akm">Steps for Nagad app payment</p>
+        </div>
+        <div className="">
+          <div className="flex relative pb-12">
+            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+            </div>
+            <div className="steps_circle_akm">
+              <FontAwesomeIcon icon={faRightToBracket} />
+            </div>
+            <div className="flex-grow pl-4">
+              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                STEP 1
+              </h2>
+              <p className="leading-relaxed">
+                Sign in to your Nagad account using your account PIN, then
+                select the <span className="font-bold"> Pay Bill </span> option.
+              </p>
+            </div>
+          </div>
+          <div className="flex relative pb-12">
+            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+            </div>
+            <div className="steps_circle_akm">
+              <FontAwesomeIcon icon={faLightbulb} />
+            </div>
+            <div className="flex-grow pl-4">
+              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                STEP 2
+              </h2>
+              <p className="leading-relaxed">
+                In the "Pay Bill" section, find and tap on{" "}
+                <span className="font-bold"> Mazeda Networks Ltd. </span> to
+                proceed.
+              </p>
+            </div>
+          </div>
+          <div className="flex relative pb-12">
+            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+            </div>
+            <div className="steps_circle_akm">
+              <FontAwesomeIcon icon={faCalendarDays} />
+            </div>
+            <div className="flex-grow pl-4">
+              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                STEP 3
+              </h2>
+              <p className="leading-relaxed">
+                From the dropdown menu,{" "}
+                <span className="font-bold"> choose the month </span>for which
+                you wish to pay your bill and enter your
+                <span className="font-bold"> customer ID</span>, then tap on{" "}
+                <span className="font-bold"> Proceed to pay </span>.
+              </p>
+            </div>
+          </div>
+          <div className="flex relative pb-12">
+            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+            </div>
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="steps_circle_akm">
+                <FontAwesomeIcon icon={faGrip} />
+              </div>
+            </div>
+            <div className="flex-grow pl-4">
+              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                STEP 4
+              </h2>
+              <p className="leading-relaxed">
+                Select your package and make the payment.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex relative">
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="steps_circle_akm">
+                <FontAwesomeIcon icon={faCheck} />
+              </div>
+            </div>
+            <div className="flex-grow pl-4">
+              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                FINISH
+              </h2>
+              <p className="leading-relaxed">
+                Upon completion, a payment successful message will confirm that
+                all steps were executed correctly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="box_round_shadow mb_akm">
+        <div className="mb_akm">
+          <p className="subheading_akm">Other Payment Options</p>
+          <p className="body_text_akm">
+            Bill payment on Mazeda Networks is doable in all sorts of ways, but
+            for the below payment portals, you need to call our office and
+            confirm our billing team about it.{" "}
+          </p>
+        </div>
+        <div className="">
+          <Image
+            src="/images/more-payment-options.png"
+            width={1500}
+            height={100}
+            alt="Slider"
+          />
+        </div>
+      </div>
+    </section>
   );
 };
 

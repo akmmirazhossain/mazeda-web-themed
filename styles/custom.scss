@@ -125,6 +125,19 @@
 
 }
 
+.pb_akm {
+    @apply pb-4;
+
+    @screen sm {
+        @apply pb-5;
+    }
+
+    @screen md {
+        @apply pb-6;
+    }
+
+}
+
 .nav_space_akm {
     @apply mt-10;
 
@@ -179,6 +192,26 @@
         @apply px-3 pt-2 pb-0;
     }
 }
+
+
+.steps_circle_akm
+{
+
+    @apply flex-shrink-0 w-10 h-10 rounded-full inline-flex items-center justify-center text-white relative z-10 bg-[#e6242d];
+    
+        @screen md {
+            //@apply px-3 pt-2 pb-0;
+        }
+    
+        @screen lg {
+           // @apply px-3 pt-2 pb-0;
+        }
+    
+        @screen xl {
+            //@apply px-3 pt-2 pb-0;
+        }
+    }
+
 
 
 .container_akm {
