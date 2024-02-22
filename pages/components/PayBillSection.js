@@ -54,7 +54,7 @@ const PayBillSection = () => {
                 STEP 2
               </h2>
               <p className="leading-relaxed">
-                In the "Pay Bill" section, find and tap on{" "}
+                In the &quot;Pay Bill&quot; section, find and tap on{" "}
                 <span className="font-bold"> Mazeda Networks Ltd. </span> to
                 proceed.
               </p>
@@ -152,7 +152,7 @@ const PayBillSection = () => {
                 STEP 2
               </h2>
               <p className="leading-relaxed">
-                In the "Pay Bill" section, find and tap on{" "}
+                In the &quot;Pay Bill&quot; section, find and tap on{" "}
                 <span className="font-bold"> Mazeda Networks Ltd. </span> to
                 proceed.
               </p>
