@@ -199,7 +199,7 @@ const PackagesSection = () => {
             </div>
           ))}
           <button className=" items-center mt-auto text-center text-white bg-[#03738C] border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-700 rounded-full">
-            <Link href="../files/btrc_tariff_policy_isp.pdf">
+            <Link href="../files/Mazeda_tariff_permission_of_BTRC.pdf">
               {" "}
               BTRC Approved Tariff <FontAwesomeIcon icon={faInfoCircle} />
             </Link>
