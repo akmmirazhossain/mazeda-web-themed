@@ -111,6 +111,18 @@
 
 }
 
+.mt_akm {
+    @apply mt-4;
+
+    @screen sm {
+        @apply mt-5;
+    }
+
+    @screen md {
+        @apply mt-6;
+    }
+
+}
 
 .mb_akm {
     @apply mb-4;
