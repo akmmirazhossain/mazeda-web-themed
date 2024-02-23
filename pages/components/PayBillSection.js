@@ -23,7 +23,10 @@ const PayBillSection = () => {
         </div>
         <div className="text-center lg:text-right">
           <button className=" items-center mt-auto text-center text-white bg-[#03738C] border-0 py-2 px-4 focus:outline-none hover:bg-red-700 rounded-full">
-            <Link href="https://isperp.mazedanetworks.net/ispcare">
+            <Link
+              href="https://isperp.mazedanetworks.net/ispcare"
+              target="_blank"
+            >
               {" "}
               Pay from online portal
             </Link>
