@@ -7,6 +7,7 @@ import {
   faGrip,
   faCheck,
 } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const PayBillSection = () => {
   return (
@@ -15,9 +16,19 @@ const PayBillSection = () => {
         <h1 className="heading_akm">Seeking payment options?</h1>
       </div>
 
-      <div className="box_round_shadow mb_akm">
-        We offer a comprehensive range of payment solutions, find your best
-        suited option to make a safe online transection.
+      <div className="box_round_shadow mb_akm grid grid-cols-1 md:grid-cols-3">
+        <div className="col-span-2 mb-4 md:mb-0">
+          We offer a comprehensive range of payment solutions, find your best
+          suited option to make a safe online transection.
+        </div>
+        <div className="text-center lg:text-right">
+          <button className=" items-center mt-auto text-center text-white bg-[#03738C] border-0 py-2 px-4 focus:outline-none hover:bg-red-700 rounded-full">
+            <Link href="https://isperp.mazedanetworks.net/ispcare">
+              {" "}
+              Pay from online portal
+            </Link>
+          </button>
+        </div>
       </div>
 
       <div className="box_round_shadow mb_akm">
