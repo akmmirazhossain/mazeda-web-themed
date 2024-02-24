@@ -34,16 +34,16 @@ const ContactPage = () => {
                 <div className="container mx-auto py-8">
                   <p className="mb-1 bg-cyan-300 pad_akm rounded-2xl font-medium text-xl">
                     {" "}
-                    Inqueries: +8809613-334455
+                    Inqueries: 09613 334455
                   </p>
                   <p className="mb-1 bg-orange-300 pad_akm rounded-2xl  font-medium text-xl">
                     {" "}
-                    Support: +88 09613 334455
+                    Support: 09613 334455, 09666 334455
                   </p>
 
                   <p className="mb-6 bg-green-300 pad_akm rounded-2xl  font-medium text-xl">
                     {" "}
-                    New Connection: +88 09613 334455
+                    New Connection: 09613 334455
                   </p>
                   <p className="mb-6">
                     <span className="font-bold">Headquarters Address:</span>{" "}

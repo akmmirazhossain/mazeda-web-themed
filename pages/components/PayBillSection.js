@@ -111,7 +111,8 @@ const PayBillSection = () => {
               >
                 <p>
                   If you don&apos;t have the Subscriber ID, you may contact our
-                  support <span className="font-bold"> +88 09613 334455</span>
+                  support{" "}
+                  <span className="font-bold"> 09613 334455, 09666 334455</span>
                 </p>
               </div>
             </div>
@@ -201,7 +202,8 @@ const PayBillSection = () => {
               >
                 <p>
                   If you don&apos;t have the Customer ID, you may contact our
-                  support <span className="font-bold"> +88 09613 334455</span>
+                  support{" "}
+                  <span className="font-bold">09613 334455, 09666 334455</span>
                 </p>
               </div>
             </div>
