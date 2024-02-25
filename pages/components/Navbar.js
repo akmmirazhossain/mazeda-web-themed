@@ -48,9 +48,9 @@ function Navbar() {
               <li>
                 <Link href="/coverage">Coverage</Link>
               </li>
-              {/* <li>
-                <Link href="/entertainment">Entertainment</Link>
-              </li> */}
+              <li>
+                <Link href="/pay-bill">Pay Bill</Link>
+              </li>
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
@@ -61,7 +61,8 @@ function Navbar() {
             <ul className=" items-center  space-x-2 hidden sm:flex">
               <li>
                 <Link
-                  href="/pay-bill"
+                  href="https://isperp.mazedanetworks.net/ispcare"
+                  target="_blank"
                   className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
                 >
                   <FontAwesomeIcon
@@ -69,7 +70,7 @@ function Navbar() {
                     className=" pr-1"
                     icon={faCreditCard}
                   />
-                  Pay Bill
+                  Quick Pay
                 </Link>
               </li>
               <li>
@@ -119,9 +120,9 @@ function Navbar() {
             <li>
               <Link href="/coverage">Coverage</Link>
             </li>
-            {/* <li>
-              <Link href="/entertainment">Entertainment</Link>
-            </li> */}
+            <li>
+              <Link href="/pay-bill">Pay Bill</Link>
+            </li>
             <li>
               <Link href="/contact">Contact</Link>
             </li>
@@ -131,10 +132,11 @@ function Navbar() {
             <li>
               <Link
                 className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
-                href="/pay-bill"
+                href="https://isperp.mazedanetworks.net/ispcare"
+                target="_blank"
               >
                 <FontAwesomeIcon className="text-xs pr-1" icon={faCreditCard} />
-                Pay Bill
+                Quick Pay
               </Link>
             </li>
             <li>
