@@ -186,7 +186,7 @@ const PackagesSection = () => {
   const isMyPage = router.pathname === "/packages";
   return (
     <section className="section_akm">
-      {isMyPage ? (
+      {/* {isMyPage ? (
         <div className="grid grid-cols-11 bg-white ">
           <div className="col-span-3"></div>
           <div className="col-span-5 flex items-center justify-center">
@@ -204,9 +204,9 @@ const PackagesSection = () => {
         </div>
       ) : (
         <div className="heading_akm">Monthly Pricing</div>
-      )}
+      )} */}
 
-      {/* <div className="heading_akm">Monthly Pricing</div> */}
+      <div className="heading_akm">Monthly Pricing</div>
       <div className="grid grid-cols-1 grid-flow-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-flow-col gap_akm justify-items-center">
         <div className="box_round_shadow">
           <p className="body_text_akm font-bold pb-4">
