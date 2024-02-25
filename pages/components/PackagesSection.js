@@ -8,6 +8,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import theme from "@/config/theme";
 import Link from "next/link";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 const pricingData = [
   {
@@ -179,9 +181,32 @@ const PackagesSection = () => {
     setFilteredData(newData);
     setActiveTab(tabIndex);
   };
+
+  const router = useRouter();
+  const isMyPage = router.pathname === "/packages";
   return (
     <section className="section_akm">
-      <div className="heading_akm">Monthly Pricing</div>
+      {isMyPage ? (
+        <div className="grid grid-cols-11 bg-white ">
+          <div className="col-span-3"></div>
+          <div className="col-span-5 flex items-center justify-center">
+            <div className="heading_akm">Monthly Pricing</div>
+          </div>
+          <div className="col-span-3 pr-4 pt-4">
+            <Image
+              src="/images/male-gamer.png"
+              alt="Call center image"
+              width={800}
+              height={667}
+              className=" "
+            />
+          </div>
+        </div>
+      ) : (
+        <div className="heading_akm">Monthly Pricing</div>
+      )}
+
+      {/* <div className="heading_akm">Monthly Pricing</div> */}
       <div className="grid grid-cols-1 grid-flow-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-flow-col gap_akm justify-items-center">
         <div className="box_round_shadow">
           <p className="body_text_akm font-bold pb-4">

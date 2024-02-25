@@ -48,9 +48,9 @@ function Navbar() {
               <li>
                 <Link href="/coverage">Coverage</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/entertainment">Entertainment</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contact">Contact</Link>
               </li>
@@ -119,9 +119,9 @@ function Navbar() {
             <li>
               <Link href="/coverage">Coverage</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/entertainment">Entertainment</Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/contact">Contact</Link>
             </li>

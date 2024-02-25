@@ -22,6 +22,7 @@ function Home() {
         <div className="container_akm ">
           <ServicesSection />
           <LinksSection />
+
           <PackagesSection />
 
           {/* <PromotionsSection /> */}
