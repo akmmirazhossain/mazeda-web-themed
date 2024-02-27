@@ -206,7 +206,6 @@ const PackagesSection = () => {
         <div className="heading_akm">Monthly Pricing</div>
       )}
 
-      <div className="heading_akm">Monthly Pricing</div>
       <div className="grid grid-cols-1 grid-flow-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-flow-col gap_akm justify-items-center">
         <div className="box_round_shadow">
           <p className="body_text_akm font-bold pb-4">
