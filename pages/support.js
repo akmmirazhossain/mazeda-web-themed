@@ -11,7 +11,7 @@ import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 const Support = () => {
   const faqContent = [
     {
-      question: "If I encounter internet issues, what steps should I take?",
+      question: "If I experience slow internet, what steps should I take?",
       answer:
         "i) Reboot the WiFi router, ii) Attempt to use the internet in close proximity to the router. If you continue to experience slow internet, please reach out to our support hotline.",
     },
