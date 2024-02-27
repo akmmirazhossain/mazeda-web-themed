@@ -12,9 +12,9 @@ const data = [
   },
   { image: "pay.webp", count: "Steps to Pay", link: "/pay-bill" },
   {
-    image: "entertainment.webp",
-    count: "Entertainment",
-    link: "/entertainment",
+    image: "faq.png",
+    count: "FAQ",
+    link: "/support",
   },
 
   {

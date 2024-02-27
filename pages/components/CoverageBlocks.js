@@ -200,7 +200,7 @@ const CoverageBlocks = () => {
 
   return (
     <section className="section_akm">
-      <div className="text-center pb-4">
+      <div className="text-center pb_akm">
         <h1 className="heading_akm">Our coverage</h1>
         <p className="subheading_akm">
           Our network grows daily, so stay tuned for updates here.

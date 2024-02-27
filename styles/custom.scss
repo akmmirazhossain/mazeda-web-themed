@@ -137,6 +137,19 @@
 
 }
 
+.pt_akm {
+    @apply pt-4;
+
+    @screen sm {
+        @apply pt-5;
+    }
+
+    @screen md {
+        @apply pt-6;
+    }
+
+}
+
 .pb_akm {
     @apply pb-4;
 
@@ -149,6 +162,9 @@
     }
 
 }
+
+
+
 
 .nav_space_akm {
     @apply mt-10;

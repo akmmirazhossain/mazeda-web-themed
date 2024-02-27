@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PhoneNumbers from "./components/common/phone-numbers";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,9 +13,9 @@ const ContactPage = () => {
 
         <div className="container_akm nav_space_akm">
           <section className="section_akm">
-            <div className="text-center">
+            <div className="text-center pb_akm">
               <h1 className="heading_akm">Contact</h1>
-              <p className="subheading_akm pb-2">
+              <p className="subheading_akm ">
                 Our lines are open 24/7, and we&apos;re always happy to hear
                 from you.
               </p>

@@ -75,7 +75,7 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/support"
                   className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
                 >
                   <FontAwesomeIcon
@@ -142,7 +142,7 @@ function Navbar() {
             <li>
               <Link
                 className="justify-center px-4 py-2 font-sm bg-[#03738C] hover:bg-red-700 text-[#FFF]  rounded-full shadow-md "
-                href="/contact"
+                href="/support"
               >
                 <FontAwesomeIcon
                   className="text-xs pr-1"
