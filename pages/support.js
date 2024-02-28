@@ -19,7 +19,7 @@ const Support = () => {
       question:
         "If I shift to a different location, will I need to pay the new connection fee again?",
       answer:
-        "There's no payment necessary in this case, as you're already a Mazeda user.",
+        "If the new residence is within proximity to our closest fiber optic hub, no further payments will be required. However, if it's too distant, there may be additional charges for the extra fiber optic cable.",
     },
     {
       question:

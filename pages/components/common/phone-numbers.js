@@ -12,6 +12,7 @@ const PhoneNumbers = () => {
             width={256}
             height={256}
             className="p-4"
+            alt=""
           />
           <p className="font-bold body_text_akm">09613 334455</p>
         </div>
@@ -22,6 +23,7 @@ const PhoneNumbers = () => {
             width={256}
             height={256}
             className="p-4"
+            alt=""
           />
           <p className="font-bold body_text_akm">09666 334455</p>
         </div>
@@ -33,6 +35,7 @@ const PhoneNumbers = () => {
             width={256}
             height={256}
             className="p-4"
+            alt=""
           />
           <p className="font-bold body_text_akm">09613 334455</p>
         </div>
