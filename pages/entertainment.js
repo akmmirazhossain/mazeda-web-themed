@@ -13,12 +13,12 @@ const EntertainLinks = [
   },
   {
     link: "http://172.22.22.100",
-    imageSrc: "/images/new-ftp.png",
+    imageSrc: "/images/new-ftp.webp",
     altText: "New FTP",
   },
   {
     link: "http://172.22.22.10:32400/",
-    imageSrc: "/images/plex.png",
+    imageSrc: "/images/plex.webp",
     altText: "Plex Movies",
   },
 ];

@@ -238,12 +238,7 @@ const PayBillSection = () => {
           </p>
         </div>
         <div className="">
-          <Image
-            src="/images/more-payment-options.png"
-            width={1500}
-            height={100}
-            alt="Slider"
-          />
+          <img src="/images/more-payment-options.webp" />
         </div>
       </div>
     </section>

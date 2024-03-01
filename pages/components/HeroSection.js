@@ -7,6 +7,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -29,7 +30,7 @@ const HeroSection = () => {
         <div
           className="bg-cover bg-center  "
           style={{
-            backgroundImage: 'url("/images/slider/slide-bg-internet.png")',
+            backgroundImage: 'url("/images/slider/slide-bg-internet.webp")',
           }}
         >
           <div className="container_akm mx-auto h-600">
@@ -47,7 +48,7 @@ const HeroSection = () => {
         <div
           className="bg-cover bg-center  "
           style={{
-            backgroundImage: 'url("/images/slider/slide-bg-dhaka.png")',
+            backgroundImage: 'url("/images/slider/slide-bg-dhaka.webp")',
           }}
         >
           <div className="container mx-auto sm:px-5 md:px-6 lg:px-4  max-w-7xl text-white h-full h-600 lg:h-600">
@@ -56,24 +57,24 @@ const HeroSection = () => {
                 <div className="text-center font-semibold bg-white bg-opacity-70  py-1 px-3 lg:p-3  text-xl sm:text-3xl lg:text-5xl">
                   <p className="skew-x-12">Welcome to Mazeda Networks!</p>
                 </div>
-                <div className="text-center font-semibold bg-white bg-opacity-70  py-1 px-3 lg:p-3   text-md sm:text-2xl lg:text-3xl">
+                <div className="text-center justify-center font-semibold bg-white bg-opacity-70  py-1 px-3 lg:p-3   text-md sm:text-2xl lg:text-3xl">
                   <p className="skew-x-12">
                     Your Gateway to Seamless Connectivity.
                   </p>
-                  <button className="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-2 py-1 lg:px-4 lg:py-2 lg:hidden">
+
+                  <Link
+                    href="/about"
+                    className="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-4 py-2 block lg:hidden w-fit mx-auto"
+                  >
                     Know more
-                  </button>
+                  </Link>
                 </div>
               </div>
 
               <div className="flex row-span-5 justify-center md:justify-between ">
                 <div className=" hidden md:block xl:pl-8">
-                  <Image
-                    src="/images/slider/girl_on_phone.png"
-                    width={512}
-                    height={512}
-                    alt="Slider"
-                    loading="eager"
+                  <img
+                    src="/images/slider/girl_on_phone.webp"
                     className="transform -scale-x-100 pt-4"
                   />
                 </div>
@@ -85,20 +86,16 @@ const HeroSection = () => {
                     consistently meet and exceed customer expectations with
                     agility and efficiency.
                   </p>
-                  <button className="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-4 py-2 hidden lg:inline-block">
+                  <Link
+                    href="/about"
+                    className="rounded-full skew-x-12 my-4 bg-[#03738C] text-white px-4 py-2 hidden lg:inline-block"
+                  >
                     Know more
-                  </button>
+                  </Link>
                 </div>
 
                 <div className="  xl:pr-8">
-                  <Image
-                    src="/images/slider/man_on_phone.png"
-                    width={512}
-                    height={512}
-                    alt="Slider"
-                    loading="eager"
-                    className=""
-                  />
+                  <img src="/images/slider/man_on_phone.webp" />
                 </div>
               </div>
             </div>
@@ -228,13 +225,7 @@ const HeroSection = () => {
               <div className="grid grid-rows-9 items-start sm:items-end justify-center ">
                 <div className="row-span-1"></div>
                 <div className="row-span-8">
-                  <Image
-                    src="/images/slider/pay-bill.png"
-                    width={732}
-                    height={612}
-                    alt="Slider"
-                    loading="eager"
-                  />
+                  <img src="/images/slider/pay-bill.webp" />
                 </div>
               </div>
             </div>

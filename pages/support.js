@@ -52,13 +52,7 @@ const Support = () => {
 
           <div className="flex flex-col sm:flex-row gap_akm">
             <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8 box_round_shadow">
-              <Image
-                src="/images/lineman.png"
-                alt="Call center image"
-                width={800}
-                height={1067}
-                className="rounded-2xl"
-              />
+              <img src="/images/lineman.webp" className="rounded-2xl" />
             </div>
             <div className="sm:w-2/3 sm:pl-8 sm:py-8 box_round_shadow mt-4 pt-4 sm:mt-0 text-center sm:text-left">
               <div className="container mx-auto ">
@@ -75,12 +69,12 @@ const Support = () => {
                         <FontAwesomeIcon icon={faCircleQuestion} />
                       </div>
                       <div>
-                        <p className="body_text_akm pl-2 font-semibold">
+                        <p className="body_text_akm text-left pl-2 font-semibold">
                           {item.question}
                         </p>
                       </div>
                     </div>
-                    <div className="pl-6">{item.answer}</div>
+                    <div className="pl-6 text-left">{item.answer}</div>
                   </div>
                 ))}
               </div>

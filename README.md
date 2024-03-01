@@ -9,7 +9,6 @@ Live Demo: https://mazeda-web.netlify.app/
 - Designed by me on Figma
 
 Home
-![Website Screenshot](public/images/home-screenshot.png)
+![Website Screenshot](public/images/home-screenshot.webp)
 
-
-![Website Screenshot](public/images/home-screenshot-responsive.png)
+![Website Screenshot](public/images/home-screenshot-responsive.webp)

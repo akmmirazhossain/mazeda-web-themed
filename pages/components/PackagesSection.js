@@ -194,12 +194,15 @@ const PackagesSection = () => {
           </div>
           <div className="col-span-3 pr-4 pt-4">
             {/* <Image
-              src="/images/male-gamer.png" 
+              src="/images/male-gamer.webp" 
               alt="Call center image"
               width={800}
               height={667}
               className=" "
-            /> */}
+            />
+             <img src="/images/male-gamer.webp" />
+            
+            */}
           </div>
         </div>
       ) : (
@@ -207,7 +210,7 @@ const PackagesSection = () => {
       )}
 
       <div className="grid grid-cols-1 grid-flow-row sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:grid-flow-col gap_akm justify-items-center">
-        <div className="box_round_shadow">
+        <div className="box_round_shadow w-full">
           <p className="body_text_akm font-bold pb-4">
             All packages include these features.
           </p>

@@ -24,12 +24,7 @@ function Navbar() {
           <div className="flex items-center">
             <div className="pr-10">
               <Link href="/">
-                <Image
-                  src="/logo.png" // Path to your logo in the public directory
-                  alt="Logo" // Alt text for accessibility
-                  width={120} // Set the width of the image
-                  height={36} // Set the height of the image
-                />
+                <img src="/logo.webp" />
               </Link>
             </div>
             <ul className=" items-center hidden space-x-8 lg:flex text-base font-medium">

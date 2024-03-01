@@ -12,7 +12,7 @@ const data = [
   },
   { image: "pay.webp", count: "Steps to Pay", link: "/pay-bill" },
   {
-    image: "faq.png",
+    image: "faq.webp",
     count: "FAQ",
     link: "/support",
   },
@@ -31,14 +31,10 @@ const LinkSection = () => {
         {data.map((item, index) => (
           <Link key={index} href={item.link}>
             <div className="box_round_shadow">
-              <Image
+              <img
                 src={`/images/${item.image}`}
-                width={512}
-                height={512}
-                alt="Slider"
-                className="mb-4 rounded-2xl"
+                className="mb-4 rounded-2xl w-full"
               />
-
               <h2 className="subheading_akm">{item.count}</h2>
             </div>
           </Link>

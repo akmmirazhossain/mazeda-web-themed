@@ -10,7 +10,7 @@ function AboutSection() {
         <div
           className="sm:w-1/3 text-center sm:pr-8 sm:py-8 box_round_shadow min-h-48"
           style={{
-            backgroundImage: `url('/images/slide-bg-internet.png')`,
+            backgroundImage: `url('/images/slide-bg-internet.webp')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
