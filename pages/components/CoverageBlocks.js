@@ -197,7 +197,7 @@ const CoverageBlocks = () => {
         </div>
       </div>
       {loading ? (
-        // Show loading spinner if loading is true
+        // Show loading spinner
         <div className="body_text_akm text-center">
           Loading <FontAwesomeIcon icon={faSpinner} className="animate-spin" />
         </div>
