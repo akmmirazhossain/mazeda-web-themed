@@ -1,3 +1,10 @@
+/*FONT COLORS*/
+
+.text_red {
+
+    color: #e6242d;
+}
+
 /*FONT STYLES*/
 
 .heading_akm {
@@ -202,6 +209,22 @@
 
     @screen xl {
         @apply p-8;
+    }
+}
+
+.box_round_shadow_small {
+    @apply p-5 rounded-2xl shadow-xl bg-white;
+
+    @screen md {
+        @apply p-6;
+    }
+
+    @screen lg {
+        @apply p-4;
+    }
+
+    @screen xl {
+        @apply p-4;
     }
 }
 
