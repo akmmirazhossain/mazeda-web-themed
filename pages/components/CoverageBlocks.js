@@ -129,6 +129,14 @@ const CoverageBlocks = () => {
     setFilteredData(filtered);
   };
 
+  const groupedData = {};
+  filteredData.forEach((item) => {
+    if (!groupedData[item.region]) {
+      groupedData[item.region] = [];
+    }
+    groupedData[item.region].push(item);
+  });
+
   return (
     <section className="section_akm">
       <div className="text-center pb_akm">
@@ -196,29 +204,29 @@ const CoverageBlocks = () => {
           )}
         </div>
       </div>
-      {loading ? (
-        // Show loading spinner
-        <div className="body_text_akm text-center">
-          Loading <FontAwesomeIcon icon={faSpinner} className="animate-spin" />
-        </div>
-      ) : (
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-center gap_akm">
-          {filteredData.map((item, index) => (
-            <div
-              key={index}
-              className="box_round_shadow_small flex flex-col justify-center items-center"
-            >
-              <div className="flex justify-center items-center">
-                <FontAwesomeIcon
-                  icon={faLocationDot}
-                  className="pr-2 text-lg text_red"
-                />
-                <p className="text-md ">{item.area}</p>
-              </div>
+      <div className="grid grid-cols-1  gap-4">
+        {Object.keys(groupedData).map((region, regionIndex) => (
+          <div key={regionIndex}>
+            <h2 className="text-lg font-semibold mb-2">{region}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4">
+              {groupedData[region].map((item, index) => (
+                <div
+                  key={index}
+                  className="box_round_shadow_small flex flex-col justify-center items-center"
+                >
+                  <div className="flex justify-center items-center">
+                    <FontAwesomeIcon
+                      icon={faLocationDot}
+                      className="pr-2 text-lg text-red-500"
+                    />
+                    <p className="text-md">{item.area}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      )}
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
