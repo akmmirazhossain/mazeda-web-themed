@@ -106,7 +106,7 @@ const HeroSection = () => {
       <SwiperSlide>
         <div
           className="bg-cover bg-center  "
-          style={{ backgroundImage: 'url("/images/slider/slider-bg.jpg")' }}
+          style={{ backgroundImage: 'url("/images/slider/slider-bg.webp")' }}
         >
           <div className="container mx-auto px-4 sm:px-5 md:px-6 lg:px-4  max-w-7xl text-white h-full h-600 lg:h-600">
             <div className="grid grid-cols-1 sm:grid-cols-2 h-full">

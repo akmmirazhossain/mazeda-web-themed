@@ -187,22 +187,15 @@ const PackagesSection = () => {
   return (
     <section className="section_akm">
       {isMyPage ? (
-        <div className="grid grid-cols-11  ">
-          <div className="col-span-3"></div>
-          <div className="col-span-5 flex items-center justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-12  bg-white">
+          <div className="hidden sm:block sm:col-span-4 pl-4 pt-4">
+            <img src="/images/female-gamer.webp" />
+          </div>
+          <div className=" sm:col-span-4 flex items-center justify-center">
             <div className="heading_akm">Monthly Pricing</div>
           </div>
-          <div className="col-span-3 pr-4 pt-4">
-            {/* <Image
-              src="/images/male-gamer.webp" 
-              alt="Call center image"
-              width={800}
-              height={667}
-              className=" "
-            />
-             <img src="/images/male-gamer.webp" />
-            
-            */}
+          <div className="hidden sm:block sm:col-span-4 pr-4 pt-4">
+            <img src="/images/male-gamer.webp" />
           </div>
         </div>
       ) : (
