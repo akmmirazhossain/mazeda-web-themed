@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,21 +23,36 @@
     height: 500px;
   }
 
-    .h-600 {
-      height: 600px;
-    }
+  .h-600 {
+    height: 600px;
+  }
 
-         .text-balance {
-           text-wrap: balance;
-         }
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /*FONT COLORS*/
+
+  .text_red {
+    color: #e6242d;
+  }
+  .bg_red {
+    background-color: #e6242d;
+  }
+
+  .text_green {
+    color: #03738c;
+  }
+
+  .bg_green {
+    background-color: #03738c;
+  }
 }
 
 body {
-
-background: #f9f9f9;
-font-family: 'Inter', sans-serif;
-color: #181818;
-
+  background: #f9f9f9;
+  font-family: "Inter", sans-serif;
+  color: #181818;
 }
 
 /* COVERAGE SEARCH */
@@ -48,7 +61,6 @@ color: #181818;
   color: #fff;
 }
 
-
 .light-theme {
   color: #333333;
 }
@@ -56,26 +68,22 @@ color: #181818;
 /* FONTS */
 
 @font-face {
-  font-family: 'shfont';
-  src: url('/fonts/Shamim-bangla-font.otf') format('opentype');
+  font-family: "shfont";
+  src: url("/fonts/Shamim-bangla-font.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 .shfont {
-  font-family: 'shfont', sans-serif;
-  
+  font-family: "shfont", sans-serif;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url('/fonts/Inter-Regular.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
-
-
 
 /* SWIPER JS */
 .swiper {
@@ -100,7 +108,6 @@ color: #181818;
   height: 100%;
   object-fit: cover;
 }
-
 
 /* CSS file for animation */
 .wifi-symbol {
@@ -130,7 +137,7 @@ color: #181818;
   position: absolute;
   bottom: 0;
   left: 0;
-  border-color: #FFFFCC;
+  border-color: #ffffcc;
   border-style: solid;
   border-width: 1em 1em 0 0;
   border-radius: 0 100% 0 0;
@@ -157,7 +164,7 @@ color: #181818;
   width: 1em;
   height: 1em;
   opacity: 1;
-  background-color: #FFFFCC;
+  background-color: #ffffcc;
   animation: none;
 }
 
@@ -178,4 +185,3 @@ color: #181818;
     opacity: 0.1;
   }
 }
-

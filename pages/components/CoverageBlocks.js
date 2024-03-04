@@ -206,8 +206,8 @@ const CoverageBlocks = () => {
       </div>
       <div className="grid grid-cols-1  gap-4">
         {Object.keys(groupedData).map((region, regionIndex) => (
-          <div key={regionIndex}>
-            <h2 className="text-lg font-semibold mb-2">{region}</h2>
+          <div key={regionIndex} className="">
+            <h2 className="subheading_akm pad_akm">{region}</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4">
               {groupedData[region].map((item, index) => (
                 <div
