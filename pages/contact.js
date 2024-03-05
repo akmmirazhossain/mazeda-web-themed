@@ -26,19 +26,9 @@ const ContactPage = () => {
                 <img src="/images/call-center.webp" className="rounded-2xl" />
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 box_round_shadow mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <div className="container mx-auto py-8">
-                  <p className="mb-1 bg-cyan-300 pad_akm rounded-2xl font-medium text-xl">
-                    {" "}
-                    Inqueries: 09613 334455
-                  </p>
-                  <p className="mb-1 bg-orange-300 pad_akm rounded-2xl  font-medium text-xl">
-                    {" "}
-                    Support: 09613 334455, 09666 334455
-                  </p>
-
-                  <p className="mb-6 bg-green-300 pad_akm rounded-2xl  font-medium text-xl">
-                    {" "}
-                    New Connection: 09613 334455
+                <div className="container mx-auto">
+                  <p className="mb_akm">
+                    <PhoneNumbers />
                   </p>
                   <p className="mb-6">
                     <span className="font-bold">Headquarters Address:</span>{" "}
