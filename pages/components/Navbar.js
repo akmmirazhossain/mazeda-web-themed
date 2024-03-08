@@ -10,6 +10,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
+const items = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/packages", label: "Packages" },
+  { href: "/coverage", label: "Coverage" },
+  { href: "/pay-bill", label: "Pay Bill" },
+  { href: "/contact", label: "Contact" },
+];
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -28,27 +37,11 @@ function Navbar() {
               </Link>
             </div>
             <ul className=" items-center hidden space-x-8 lg:flex text-base font-medium">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/packages">Packages</Link>
-              </li>
-              {/* <li>
-                <Link href="/offers">Offers</Link>
-              </li> */}
-              <li>
-                <Link href="/coverage">Coverage</Link>
-              </li>
-              <li>
-                <Link href="/pay-bill">Pay Bill</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
+              {items.map((item, index) => (
+                <Link href={item.href}>
+                  <li key={index}>{item.label}</li>
+                </Link>
+              ))}
             </ul>
           </div>
 
@@ -109,9 +102,7 @@ function Navbar() {
             <li>
               <Link href="/packages">Packages</Link>
             </li>
-            {/* <li>
-              <Link href="/offers">Offers</Link>
-            </li> */}
+
             <li>
               <Link href="/coverage">Coverage</Link>
             </li>

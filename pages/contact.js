@@ -27,9 +27,9 @@ const ContactPage = () => {
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 box_round_shadow mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <div className="container mx-auto">
-                  <p className="mb_akm">
+                  <div className="mb_akm">
                     <PhoneNumbers />
-                  </p>
+                  </div>
                   <p className="mb-6">
                     <span className="font-bold">Headquarters Address:</span>{" "}
                     House # 123, Flat # B4, Road # 13/A, West Dhanmondi, Dhaka.
