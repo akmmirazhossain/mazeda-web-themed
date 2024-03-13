@@ -66,6 +66,8 @@
     }
 }
 
+//CONTAINERS AND DIVS
+
 .section_akm {
     @apply mx-auto py-4;
 
@@ -84,6 +86,27 @@
     @screen xl {
         @apply py-14;
     }
+}
+
+
+.container_akm {
+    @apply container mx-auto px-4 max-w-7xl;
+
+    @screen sm {
+        @apply px-5;
+    }
+
+    @screen md {
+        @apply px-6;
+    }
+
+    @screen lg {
+        @apply p-0;
+    }
+
+    // @screen xl {
+    //     @apply ;
+    // }
 }
 
 
@@ -263,23 +286,4 @@
 
 
 
-.container_akm {
-    @apply container mx-auto px-4 max-w-7xl ;
-
-    @screen sm {
-        @apply px-5;
-    }
-
-    @screen md {
-        @apply px-6;
-    }
-
-    @screen lg {
-        @apply p-0;
-    }
-
-    // @screen xl {
-    //     @apply ;
-    // }
-}
 

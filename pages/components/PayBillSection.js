@@ -10,6 +10,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
+// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
 const PayBillSection = () => {
   const [currentMonthYear, setCurrentMonthYear] = useState("");
 
@@ -48,91 +54,131 @@ const PayBillSection = () => {
         <div className="mb_akm">
           <p className="subheading_akm">Steps for Bkash app payment</p>
         </div>
-        <div className="">
-          <div className="flex relative pb-12">
-            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+        <div className="grid grid-cols-1 lg:grid-cols-5">
+          <div className="lg:col-span-3">
+            <div className="flex relative pb-12">
+              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+              </div>
+              <div className="steps_circle_akm">
+                <FontAwesomeIcon icon={faRightToBracket} />
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                  STEP 1
+                </h2>
+                <p className="leading-relaxed">
+                  Sign in to your bKash account using your account PIN, then
+                  select the <span className="font-bold"> Pay Bill </span>{" "}
+                  option.
+                </p>
+              </div>
             </div>
-            <div className="steps_circle_akm">
-              <FontAwesomeIcon icon={faRightToBracket} />
+            <div className="flex relative pb-12">
+              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+              </div>
+              <div className="steps_circle_akm">
+                <FontAwesomeIcon icon={faLightbulb} />
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                  STEP 2
+                </h2>
+                <p className="leading-relaxed">
+                  In the <span className="font-bold"> Pay Bill </span> section
+                  under <span className="font-bold"> Search Organization</span>,
+                  type Mazeda and look for{" "}
+                  <span className="font-bold"> Mazeda Networks Ltd. </span> to
+                  proceed.
+                </p>
+              </div>
             </div>
-            <div className="flex-grow pl-4">
-              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                STEP 1
-              </h2>
-              <p className="leading-relaxed">
-                Sign in to your bKash account using your account PIN, then
-                select the <span className="font-bold"> Pay Bill </span> option.
-              </p>
+            <div className="flex relative pb-12">
+              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+              </div>
+              <div className="steps_circle_akm">
+                <FontAwesomeIcon icon={faCalendarDays} />
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                  STEP 3
+                </h2>
+                <p className="leading-relaxed">
+                  From the <span className="font-bold">Bill Period</span>{" "}
+                  dropdown choose the{" "}
+                  <span className="font-bold"> current month </span> (e.g.{" "}
+                  {currentMonthYear}) for which you wish to pay your bill and
+                  enter your
+                  <span className="font-bold"> Subscriber ID</span>, then tap on{" "}
+                  <span className="font-bold"> Proceed to pay</span>.
+                </p>
+                <div
+                  className="mt_akm bg-orange-100 border-l-4  border-orange-500 text-orange-700 p-4"
+                  role="alert"
+                >
+                  <p>
+                    If you don&apos;t have the Subscriber ID, you may contact
+                    our support{" "}
+                    <span className="font-bold">
+                      {" "}
+                      09613 334455, 09666 334455
+                    </span>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="flex relative pb-12">
-            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
-            </div>
-            <div className="steps_circle_akm">
-              <FontAwesomeIcon icon={faLightbulb} />
-            </div>
-            <div className="flex-grow pl-4">
-              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                STEP 2
-              </h2>
-              <p className="leading-relaxed">
-                In the <span className="font-bold"> Pay Bill </span> section
-                under <span className="font-bold"> Search Organization</span>,
-                type Mazeda and look for{" "}
-                <span className="font-bold"> Mazeda Networks Ltd. </span> to
-                proceed.
-              </p>
-            </div>
-          </div>
-          <div className="flex relative pb-12">
-            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
-            </div>
-            <div className="steps_circle_akm">
-              <FontAwesomeIcon icon={faCalendarDays} />
-            </div>
-            <div className="flex-grow pl-4">
-              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                STEP 3
-              </h2>
-              <p className="leading-relaxed">
-                From the <span className="font-bold">Bill Period</span> dropdown
-                choose the <span className="font-bold"> current month </span>{" "}
-                (e.g. {currentMonthYear}) for which you wish to pay your bill
-                and enter your
-                <span className="font-bold"> Subscriber ID</span>, then tap on{" "}
-                <span className="font-bold"> Proceed to pay</span>.
-              </p>
-              <div
-                className="mt_akm bg-orange-100 border-l-4  border-orange-500 text-orange-700 p-4"
-                role="alert"
-              >
-                <p>
-                  If you don&apos;t have the Subscriber ID, you may contact our
-                  support{" "}
-                  <span className="font-bold"> 09613 334455, 09666 334455</span>
+
+            <div className="flex relative">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <div className="steps_circle_akm">
+                  <FontAwesomeIcon icon={faCheck} />
+                </div>
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                  FINISH
+                </h2>
+                <p className="leading-relaxed">
+                  Upon completion, a payment successful message will confirm
+                  that all steps were executed correctly.
                 </p>
               </div>
             </div>
           </div>
-
-          <div className="flex relative">
-            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-              <div className="steps_circle_akm">
-                <FontAwesomeIcon icon={faCheck} />
-              </div>
-            </div>
-            <div className="flex-grow pl-4">
-              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                FINISH
-              </h2>
-              <p className="leading-relaxed">
-                Upon completion, a payment successful message will confirm that
-                all steps were executed correctly.
-              </p>
-            </div>
+          <div className="lg:col-span-2 pad_akm">
+            <Swiper
+              className="mySwiper"
+              effect="c"
+              slidesPerView={1}
+              pagination={{
+                dynamicBullets: true,
+              }}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+              }}
+              modules={[EffectCoverflow, Pagination, Autoplay]}
+              loop={true}
+            >
+              <SwiperSlide className="">
+                <img src="images/slider/bkash/b1.jpg" />
+              </SwiperSlide>
+              <SwiperSlide className="">
+                <img src="images/slider/bkash/b2.jpg" />
+              </SwiperSlide>
+              <SwiperSlide className="">
+                <img src="images/slider/bkash/b3.jpg" />
+              </SwiperSlide>
+              <SwiperSlide className="">
+                <img src="images/slider/bkash/b4.jpg" />
+              </SwiperSlide>
+              <SwiperSlide className="">
+                <img src="images/slider/bkash/b5.jpg" />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
@@ -141,89 +187,127 @@ const PayBillSection = () => {
         <div className="mb_akm">
           <p className="subheading_akm">Steps for Nagad app payment</p>
         </div>
-        <div className="">
-          <div className="flex relative pb-12">
-            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+        <div className="grid grid-cols-1 lg:grid-cols-5">
+          <div className="lg:col-span-3">
+            <div className="flex relative pb-12">
+              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+              </div>
+              <div className="steps_circle_akm">
+                <FontAwesomeIcon icon={faRightToBracket} />
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                  STEP 1
+                </h2>
+                <p className="leading-relaxed">
+                  Sign in to your Nagad account using your account PIN, then
+                  select the <span className="font-bold"> Bill Pay</span>{" "}
+                  option.
+                </p>
+              </div>
             </div>
-            <div className="steps_circle_akm">
-              <FontAwesomeIcon icon={faRightToBracket} />
-            </div>
-            <div className="flex-grow pl-4">
-              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                STEP 1
-              </h2>
-              <p className="leading-relaxed">
-                Sign in to your Nagad account using your account PIN, then
-                select the <span className="font-bold"> Pay Bill </span> option.
-              </p>
-            </div>
-          </div>
 
-          <div className="flex relative pb-12">
-            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+            <div className="flex relative pb-12">
+              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+              </div>
+              <div className="steps_circle_akm">
+                <FontAwesomeIcon icon={faCalendarDays} />
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                  STEP 2
+                </h2>
+                <p className="leading-relaxed">
+                  In the <span className="font-bold"> Biller </span> section,
+                  type Mazeda and search{" "}
+                  <span className="font-bold"> Mazeda Networks Ltd.</span> to
+                  proceed.
+                </p>
+              </div>
             </div>
-            <div className="steps_circle_akm">
-              <FontAwesomeIcon icon={faCalendarDays} />
-            </div>
-            <div className="flex-grow pl-4">
-              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                STEP 2
-              </h2>
-              <p className="leading-relaxed">
-                In the <span className="font-bold"> Biller </span> section, type
-                Mazeda and search{" "}
-                <span className="font-bold"> Mazeda Networks Ltd.</span> to
-                proceed.
-              </p>
-            </div>
-          </div>
 
-          <div className="flex relative pb-12">
-            <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-              <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+            <div className="flex relative pb-12">
+              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200 pointer-events-none" />
+              </div>
+              <div className="steps_circle_akm">
+                <FontAwesomeIcon icon={faCalendarDays} />
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                  STEP 3
+                </h2>
+                <p className="leading-relaxed">
+                  Type your
+                  <span className="font-bold">Customer ID</span>, then tap on{" "}
+                  <span className="font-bold">NEXT</span>.
+                </p>
+                <div
+                  className="mt_akm bg-orange-100 border-l-4  border-orange-500 text-orange-700 p-4"
+                  role="alert"
+                >
+                  <p>
+                    If you don&apos;t have the Customer ID, you may contact our
+                    support{" "}
+                    <span className="font-bold">
+                      09613 334455, 09666 334455
+                    </span>
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="steps_circle_akm">
-              <FontAwesomeIcon icon={faCalendarDays} />
-            </div>
-            <div className="flex-grow pl-4">
-              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                STEP 3
-              </h2>
-              <p className="leading-relaxed">
-                Type your
-                <span className="font-bold">Customer ID</span>, then tap on{" "}
-                <span className="font-bold">NEXT</span>.
-              </p>
-              <div
-                className="mt_akm bg-orange-100 border-l-4  border-orange-500 text-orange-700 p-4"
-                role="alert"
-              >
-                <p>
-                  If you don&apos;t have the Customer ID, you may contact our
-                  support{" "}
-                  <span className="font-bold">09613 334455, 09666 334455</span>
+
+            <div className="flex relative">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <div className="steps_circle_akm">
+                  <FontAwesomeIcon icon={faCheck} />
+                </div>
+              </div>
+              <div className="flex-grow pl-4">
+                <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
+                  FINISH
+                </h2>
+                <p className="leading-relaxed">
+                  Upon completion, a payment successful message will confirm
+                  that all steps were executed correctly.
                 </p>
               </div>
             </div>
           </div>
-
-          <div className="flex relative">
-            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-              <div className="steps_circle_akm">
-                <FontAwesomeIcon icon={faCheck} />
-              </div>
-            </div>
-            <div className="flex-grow pl-4">
-              <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
-                FINISH
-              </h2>
-              <p className="leading-relaxed">
-                Upon completion, a payment successful message will confirm that
-                all steps were executed correctly.
-              </p>
-            </div>
+          <div className="lg:col-span-2 pad_akm">
+            <Swiper
+              className="mySwiper"
+              effect="c"
+              slidesPerView={1}
+              pagination={{
+                dynamicBullets: true,
+              }}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+              }}
+              modules={[EffectCoverflow, Pagination, Autoplay]}
+              loop={true}
+            >
+              <SwiperSlide className="">
+                <img src="images/slider/nagad/n1.jpg" />
+              </SwiperSlide>
+              <SwiperSlide className="">
+                <img src="images/slider/nagad/n2.jpg" />
+              </SwiperSlide>
+              <SwiperSlide className="">
+                <img src="images/slider/nagad/n3.jpg" />
+              </SwiperSlide>
+              <SwiperSlide className="">
+                <img src="images/slider/nagad/n4.jpg" />
+              </SwiperSlide>
+              <SwiperSlide className="">
+                <img src="images/slider/nagad/n5.jpg" />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
