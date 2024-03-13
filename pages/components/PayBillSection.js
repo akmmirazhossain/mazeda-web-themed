@@ -54,8 +54,8 @@ const PayBillSection = () => {
         <div className="mb_akm">
           <p className="subheading_akm">Steps for Bkash app payment</p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-5">
-          <div className="lg:col-span-3">
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7">
+          <div className="md:col-span-3 lg:col-span-5">
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
@@ -147,7 +147,7 @@ const PayBillSection = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-2 pad_akm">
+          <div className="md:col-span-3 lg:col-span-2 pad_akm">
             <Swiper
               className="mySwiper"
               effect="c"
@@ -187,8 +187,8 @@ const PayBillSection = () => {
         <div className="mb_akm">
           <p className="subheading_akm">Steps for Nagad app payment</p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-5">
-          <div className="lg:col-span-3">
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7">
+          <div className="md:col-span-3 lg:col-span-5">
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
@@ -276,7 +276,7 @@ const PayBillSection = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-2 pad_akm">
+          <div className="md:col-span-3 lg:col-span-2 pad_akm">
             <Swiper
               className="mySwiper"
               effect="c"
