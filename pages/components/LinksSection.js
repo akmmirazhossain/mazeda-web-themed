@@ -32,6 +32,7 @@ const LinkSection = () => {
           <Link key={index} href={item.link}>
             <div className="box_round_shadow">
               <img
+                alt=""
                 src={`/images/${item.image}`}
                 className="mb-4 rounded-2xl w-full"
               />

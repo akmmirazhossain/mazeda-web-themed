@@ -16,7 +16,7 @@ const ClientsSection = () => {
         {" "}
         {logos.map((logo, index) => (
           <div key={index} className="flex items-center justify-center h-full ">
-            <img src={logo} />
+            <img alt="" src={logo} />
           </div>
         ))}
       </div>

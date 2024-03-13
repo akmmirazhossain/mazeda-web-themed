@@ -56,6 +56,7 @@ const HeroSection = () => {
               <div className="flex row-span-5 justify-center md:justify-between ">
                 <div className=" hidden md:block xl:pl-8">
                   <img
+                    alt=""
                     src="/images/slider/girl_on_phone.webp"
                     className="transform -scale-x-100 pt-4"
                   />
@@ -77,7 +78,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className="  xl:pr-8">
-                  <img src="/images/slider/man_on_phone.webp" />
+                  <img alt="" src="/images/slider/man_on_phone.webp" />
                 </div>
               </div>
             </div>
@@ -133,6 +134,7 @@ const HeroSection = () => {
               <div className="flex col-span-1 row-span-2 justify-center ">
                 <div className="px-2">
                   <img
+                    alt=""
                     className="w-fit"
                     src="/images/slider/girl-holding-cable.webp"
                   />
@@ -265,7 +267,7 @@ const HeroSection = () => {
               <div className="grid grid-rows-9 items-start sm:items-end justify-center ">
                 <div className="row-span-1"></div>
                 <div className="row-span-8">
-                  <img src="/images/slider/pay-bill.webp" />
+                  <img alt="" src="/images/slider/pay-bill.webp" />
                 </div>
               </div>
             </div>

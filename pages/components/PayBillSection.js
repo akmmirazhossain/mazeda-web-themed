@@ -164,19 +164,19 @@ const PayBillSection = () => {
               loop={true}
             >
               <SwiperSlide className="">
-                <img src="images/slider/bkash/b1.jpg" />
+                <img alt="" src="images/slider/bkash/b1.jpg" />
               </SwiperSlide>
               <SwiperSlide className="">
-                <img src="images/slider/bkash/b2.jpg" />
+                <img alt="" src="images/slider/bkash/b2.jpg" />
               </SwiperSlide>
               <SwiperSlide className="">
-                <img src="images/slider/bkash/b3.jpg" />
+                <img alt="" src="images/slider/bkash/b3.jpg" />
               </SwiperSlide>
               <SwiperSlide className="">
-                <img src="images/slider/bkash/b4.jpg" />
+                <img alt="" src="images/slider/bkash/b4.jpg" />
               </SwiperSlide>
               <SwiperSlide className="">
-                <img src="images/slider/bkash/b5.jpg" />
+                <img alt="" src="images/slider/bkash/b5.jpg" />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -293,19 +293,19 @@ const PayBillSection = () => {
               loop={true}
             >
               <SwiperSlide className="">
-                <img src="images/slider/nagad/n1.jpg" />
+                <img alt="" src="images/slider/nagad/n1.jpg" />
               </SwiperSlide>
               <SwiperSlide className="">
-                <img src="images/slider/nagad/n2.jpg" />
+                <img alt="" src="images/slider/nagad/n2.jpg" />
               </SwiperSlide>
               <SwiperSlide className="">
-                <img src="images/slider/nagad/n3.jpg" />
+                <img alt="" src="images/slider/nagad/n3.jpg" />
               </SwiperSlide>
               <SwiperSlide className="">
-                <img src="images/slider/nagad/n4.jpg" />
+                <img alt="" src="images/slider/nagad/n4.jpg" />
               </SwiperSlide>
               <SwiperSlide className="">
-                <img src="images/slider/nagad/n5.jpg" />
+                <img alt="" src="images/slider/nagad/n5.jpg" />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -322,7 +322,7 @@ const PayBillSection = () => {
           </p>
         </div>
         <div className="">
-          <img src="/images/more-payment-options.webp" />
+          <img alt="" src="/images/more-payment-options.webp" />
         </div>
       </div>
     </section>

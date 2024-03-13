@@ -189,13 +189,13 @@ const PackagesSection = () => {
       {isMyPage ? (
         <div className="grid grid-cols-1 sm:grid-cols-12  bg-white">
           <div className="hidden sm:block sm:col-span-4 pl-4 pt-4">
-            <img src="/images/female-gamer.webp" />
+            <img alt="" src="/images/female-gamer.webp" />
           </div>
           <div className=" sm:col-span-4 flex items-center justify-center">
             <div className="heading_akm">Monthly Pricing</div>
           </div>
           <div className="hidden sm:block sm:col-span-4 pr-4 pt-4">
-            <img src="/images/male-gamer.webp" />
+            <img alt="" src="/images/male-gamer.webp" />
           </div>
         </div>
       ) : (

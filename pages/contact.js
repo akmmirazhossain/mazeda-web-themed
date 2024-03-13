@@ -23,7 +23,11 @@ const ContactPage = () => {
 
             <div className="flex flex-col sm:flex-row gap_akm">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8 box_round_shadow">
-                <img src="/images/call-center.webp" className="rounded-2xl" />
+                <img
+                  src="/images/call-center.webp"
+                  alt=""
+                  className="rounded-2xl"
+                />
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 box_round_shadow mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <div className="container mx-auto">

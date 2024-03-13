@@ -33,13 +33,13 @@ function Navbar() {
           <div className="flex items-center">
             <div className="pr-10">
               <Link href="/">
-                <img src="/logo.webp" />
+                <img alt="" src="/logo.webp" />
               </Link>
             </div>
             <ul className=" items-center hidden space-x-8 lg:flex text-base font-medium">
-              {items.map((item, index) => (
-                <Link href={item.href}>
-                  <li key={index}>{item.label}</li>
+              {items.map((item) => (
+                <Link href={item.href} key={item.id}>
+                  <li>{item.label}</li>
                 </Link>
               ))}
             </ul>
