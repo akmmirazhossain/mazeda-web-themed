@@ -175,13 +175,16 @@ const PayBillSection = () => {
             >
               <img
                 src="images/slider/bkash/b1.jpg"
-                className=" w-full h-full object-contain rounded-2xl brightness-75"
+                className=" w-full h-full object-contain rounded-2xl brightness-90"
                 alt="Background Image"
               />
               <div className="absolute inset-0 flex justify-center items-center">
                 <div className="flex justify-center items-center flex-col">
-                  <FontAwesomeIcon className="text-6xl" icon={faCirclePlay} />
-                  <p className="bg-white pad_akm rounded-full text-xs mt-1">
+                  <FontAwesomeIcon
+                    className="text-6xl text-slate-900"
+                    icon={faCirclePlay}
+                  />
+                  <p className="bg-slate-900 text-white pad_akm rounded-full text-xs mt-1">
                     Watch tutorial
                   </p>
                 </div>
@@ -342,13 +345,16 @@ const PayBillSection = () => {
             >
               <img
                 src="images/slider/nagad/n1.jpg"
-                className="w-full h-full object-contain rounded-2xl brightness-75"
+                className="w-full h-full object-contain rounded-2xl brightness-90"
                 alt="Background Image"
               />
               <div className="absolute inset-0 flex justify-center items-center">
                 <div className="flex justify-center items-center flex-col">
-                  <FontAwesomeIcon className="text-6xl" icon={faCirclePlay} />
-                  <p className="bg-white pad_akm rounded-full text-xs mt-1">
+                  <FontAwesomeIcon
+                    className="text-6xl text-slate-900"
+                    icon={faCirclePlay}
+                  />
+                  <p className="bg-slate-900 text-white pad_akm rounded-full text-xs mt-1">
                     Watch tutorial
                   </p>
                 </div>
