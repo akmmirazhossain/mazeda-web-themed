@@ -80,7 +80,7 @@ const PayBillSection = () => {
             <p className="subheading_akm">Steps for Bkash app payment</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-9">
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-9 gap_akm">
           <div className="md:col-span-3 lg:col-span-7">
             <div className="flex relative pb-12">
               <div className="h-full w-12 absolute inset-0 flex items-center justify-center">
@@ -263,7 +263,7 @@ const PayBillSection = () => {
             <p className="subheading_akm">Steps for Nagad app payment</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-9">
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-9 gap_akm">
           <div className="md:col-span-3 lg:col-span-7">
             <div className="flex relative pb-12">
               <div className="h-full w-12 absolute inset-0 flex items-center justify-center">
@@ -428,7 +428,7 @@ const PayBillSection = () => {
         </div>
       </div>
 
-      <div className="box_round_shadow mb_akm">
+      <div className="box_round_shadow mb_akm grid grid-cols-1 lg:grid-cols-2">
         <div className="mb_akm">
           <p className="subheading_akm">Other Payment Options</p>
           <p className="body_text_akm">
@@ -438,7 +438,8 @@ const PayBillSection = () => {
           </p>
         </div>
         <div className="">
-          <img alt="" src="/images/more-payment-options.webp" />
+          <img alt="" src="/images/more-payment-options-part1.png" />
+          <img alt="" src="/images/more-payment-options-part2.png" />
         </div>
       </div>
     </section>
