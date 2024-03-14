@@ -72,8 +72,13 @@ const PayBillSection = () => {
       </div>
 
       <div className="box_round_shadow mb_akm">
-        <div className="mb_akm">
-          <p className="subheading_akm">Steps for Bkash app payment</p>
+        <div className="mb_akm flex items-center">
+          <div className="rounded-full border mr-3 h-10 w-10">
+            <img src="images/logos/bkash-logo.png" className=" rounded-full" />
+          </div>
+          <div>
+            <p className="subheading_akm">Steps for Bkash app payment</p>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-9">
           <div className="md:col-span-3 lg:col-span-7">
@@ -250,8 +255,13 @@ const PayBillSection = () => {
       </div>
 
       <div className="box_round_shadow mb_akm">
-        <div className="mb_akm">
-          <p className="subheading_akm">Steps for Nagad app payment</p>
+        <div className="mb_akm flex items-center">
+          <div className="rounded-full border mr-3 h-10 w-10">
+            <img src="images/logos/nagad.jpg" className=" rounded-full" />
+          </div>
+          <div>
+            <p className="subheading_akm">Steps for Nagad app payment</p>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-9">
           <div className="md:col-span-3 lg:col-span-7">
