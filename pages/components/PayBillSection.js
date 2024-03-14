@@ -1,12 +1,14 @@
 import Image from "next/image";
-import { useState, useEffect } from "react";
+
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faRightToBracket,
   faLightbulb,
   faCalendarDays,
-  faGrip,
+  faCirclePlay,
   faCheck,
+  faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
@@ -25,6 +27,25 @@ const PayBillSection = () => {
     const year = currentDate.getFullYear();
     setCurrentMonthYear(`${month} ${year}`);
   }, []);
+
+  const [isBkashModalOpen, setIsBkashModalOpen] = useState(false);
+  const [isNagadModalOpen, setIsNagadModalOpen] = useState(false);
+
+  const openBkashModal = () => {
+    setIsBkashModalOpen(true);
+  };
+
+  const closeBkashModal = () => {
+    setIsBkashModalOpen(false);
+  };
+
+  const openNagadModal = () => {
+    setIsNagadModalOpen(true);
+  };
+
+  const closeNagadModal = () => {
+    setIsNagadModalOpen(false);
+  };
 
   return (
     <section className="section_akm">
@@ -54,8 +75,8 @@ const PayBillSection = () => {
         <div className="mb_akm">
           <p className="subheading_akm">Steps for Bkash app payment</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7">
-          <div className="md:col-span-3 lg:col-span-5">
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-9">
+          <div className="md:col-span-3 lg:col-span-7">
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
@@ -147,38 +168,77 @@ const PayBillSection = () => {
               </div>
             </div>
           </div>
-          <div className="md:col-span-3 lg:col-span-2 pad_akm">
-            <Swiper
-              className="mySwiper"
-              effect="c"
-              slidesPerView={1}
-              pagination={{
-                dynamicBullets: true,
-              }}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: false,
-              }}
-              modules={[EffectCoverflow, Pagination, Autoplay]}
-              loop={true}
+          <div className="md:col-span-3 lg:col-span-2  pad_akm">
+            <div
+              className="relative h-96 md:h-full transition duration-300 transform hover:scale-105 cursor-pointer"
+              onClick={openBkashModal}
             >
-              <SwiperSlide className="">
-                <img alt="" src="images/slider/bkash/b1.jpg" />
-              </SwiperSlide>
-              <SwiperSlide className="">
-                <img alt="" src="images/slider/bkash/b2.jpg" />
-              </SwiperSlide>
-              <SwiperSlide className="">
-                <img alt="" src="images/slider/bkash/b3.jpg" />
-              </SwiperSlide>
-              <SwiperSlide className="">
-                <img alt="" src="images/slider/bkash/b4.jpg" />
-              </SwiperSlide>
-              <SwiperSlide className="">
-                <img alt="" src="images/slider/bkash/b5.jpg" />
-              </SwiperSlide>
-            </Swiper>
+              <img
+                src="images/slider/bkash/b1.jpg"
+                className=" w-full h-full object-contain rounded-2xl brightness-75"
+                alt="Background Image"
+              />
+              <div className="absolute inset-0 flex justify-center items-center">
+                <div className="flex justify-center items-center flex-col">
+                  <FontAwesomeIcon className="text-6xl" icon={faCirclePlay} />
+                  <p className="bg-white pad_akm rounded-full text-xs mt-1">
+                    Watch tutorial
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Modal */}
+            {isBkashModalOpen && (
+              <div
+                onClick={() => closeBkashModal(true)}
+                className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50"
+              >
+                <div className="relative bg-white w-5/6 sm:w-2/3 md:w-1/4 lg:w-1/5 rounded-2xl">
+                  <div className="absolute z-40 -right-2 -top-3">
+                    <button className="" onClick={() => closeBkashModal(true)}>
+                      <FontAwesomeIcon
+                        className="text-4xl  text-white"
+                        icon={faCircleXmark}
+                      />
+                    </button>
+                  </div>
+                  <div>
+                    <Swiper
+                      className="mySwiper rounded-2xl"
+                      effect="c"
+                      slidesPerView={1}
+                      pagination={{
+                        dynamicBullets: true,
+                      }}
+                      autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: false,
+                      }}
+                      modules={[EffectCoverflow, Pagination, Autoplay]}
+                      loop={true}
+                    >
+                      <SwiperSlide className="">
+                        <img alt="" src="images/slider/bkash/b1.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide className="">
+                        <img alt="" src="images/slider/bkash/b2.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide className="">
+                        <img alt="" src="images/slider/bkash/b3.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide className="">
+                        <img alt="" src="images/slider/bkash/b4.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide className="">
+                        <img alt="" src="images/slider/bkash/b5.jpg" />
+                      </SwiperSlide>
+                    </Swiper>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -187,8 +247,8 @@ const PayBillSection = () => {
         <div className="mb_akm">
           <p className="subheading_akm">Steps for Nagad app payment</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-7">
-          <div className="md:col-span-3 lg:col-span-5">
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-9">
+          <div className="md:col-span-3 lg:col-span-7">
             <div className="flex relative pb-12">
               <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
@@ -240,9 +300,8 @@ const PayBillSection = () => {
                   STEP 3
                 </h2>
                 <p className="leading-relaxed">
-                  Type your
-                  <span className="font-bold">Customer ID</span>, then tap on{" "}
-                  <span className="font-bold">NEXT</span>.
+                  Type your <span className="font-bold"> Customer ID</span>,
+                  then tap on <span className="font-bold">NEXT</span>.
                 </p>
                 <div
                   className="mt_akm bg-orange-100 border-l-4  border-orange-500 text-orange-700 p-4"
@@ -277,37 +336,75 @@ const PayBillSection = () => {
             </div>
           </div>
           <div className="md:col-span-3 lg:col-span-2 pad_akm">
-            <Swiper
-              className="mySwiper"
-              effect="c"
-              slidesPerView={1}
-              pagination={{
-                dynamicBullets: true,
-              }}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: false,
-              }}
-              modules={[EffectCoverflow, Pagination, Autoplay]}
-              loop={true}
+            <div
+              className="relative h-96 md:h-full transition duration-300 transform hover:scale-105 cursor-pointer "
+              onClick={openNagadModal}
             >
-              <SwiperSlide className="">
-                <img alt="" src="images/slider/nagad/n1.jpg" />
-              </SwiperSlide>
-              <SwiperSlide className="">
-                <img alt="" src="images/slider/nagad/n2.jpg" />
-              </SwiperSlide>
-              <SwiperSlide className="">
-                <img alt="" src="images/slider/nagad/n3.jpg" />
-              </SwiperSlide>
-              <SwiperSlide className="">
-                <img alt="" src="images/slider/nagad/n4.jpg" />
-              </SwiperSlide>
-              <SwiperSlide className="">
-                <img alt="" src="images/slider/nagad/n5.jpg" />
-              </SwiperSlide>
-            </Swiper>
+              <img
+                src="images/slider/nagad/n1.jpg"
+                className="w-full h-full object-contain rounded-2xl brightness-75"
+                alt="Background Image"
+              />
+              <div className="absolute inset-0 flex justify-center items-center">
+                <div className="flex justify-center items-center flex-col">
+                  <FontAwesomeIcon className="text-6xl" icon={faCirclePlay} />
+                  <p className="bg-white pad_akm rounded-full text-xs mt-1">
+                    Watch tutorial
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {isNagadModalOpen && (
+              <div
+                onClick={() => closeNagadModal(true)}
+                className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50"
+              >
+                <div className="relative bg-white w-5/6 sm:w-2/3 md:w-1/4 lg:w-1/5 rounded-2xl">
+                  <div className="absolute z-40 -right-2 -top-3">
+                    <button className="" onClick={() => closeNagadModal(true)}>
+                      <FontAwesomeIcon
+                        className="text-4xl  text-white"
+                        icon={faCircleXmark}
+                      />
+                    </button>
+                  </div>
+                  <div>
+                    <Swiper
+                      className="mySwiper rounded-2xl"
+                      effect="c"
+                      slidesPerView={1}
+                      pagination={{
+                        dynamicBullets: true,
+                      }}
+                      autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: false,
+                      }}
+                      modules={[EffectCoverflow, Pagination, Autoplay]}
+                      loop={true}
+                    >
+                      <SwiperSlide className="">
+                        <img alt="" src="images/slider/nagad/n1.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide className="">
+                        <img alt="" src="images/slider/nagad/n2.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide className="">
+                        <img alt="" src="images/slider/nagad/n3.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide className="">
+                        <img alt="" src="images/slider/nagad/n4.jpg" />
+                      </SwiperSlide>
+                      <SwiperSlide className="">
+                        <img alt="" src="images/slider/nagad/n5.jpg" />
+                      </SwiperSlide>
+                    </Swiper>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -318,7 +415,7 @@ const PayBillSection = () => {
           <p className="body_text_akm">
             Bill payment on Mazeda Networks is doable in all sorts of ways, but
             for the below payment portals, you need to call our office and
-            confirm our billing team about it.{" "}
+            confirm our billing team about it.
           </p>
         </div>
         <div className="">
