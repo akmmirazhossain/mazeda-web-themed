@@ -73,7 +73,7 @@ const PayBillSection = () => {
 
       <div className="box_round_shadow mb_akm">
         <div className="mb_akm flex items-center">
-          <div className="rounded-full border mr-3 h-10 w-10">
+          <div className="rounded-full border mr-3 h-12 w-12">
             <img src="images/logos/bkash-logo.png" className=" rounded-full" />
           </div>
           <div>
@@ -83,7 +83,7 @@ const PayBillSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-9">
           <div className="md:col-span-3 lg:col-span-7">
             <div className="flex relative pb-12">
-              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-12 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
               </div>
               <div className="steps_circle_akm">
@@ -101,7 +101,7 @@ const PayBillSection = () => {
               </div>
             </div>
             <div className="flex relative pb-12">
-              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-12 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
               </div>
               <div className="steps_circle_akm">
@@ -121,7 +121,7 @@ const PayBillSection = () => {
               </div>
             </div>
             <div className="flex relative pb-12">
-              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-12 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
               </div>
               <div className="steps_circle_akm">
@@ -157,7 +157,7 @@ const PayBillSection = () => {
             </div>
 
             <div className="flex relative">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-12 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
                 <div className="steps_circle_akm">
                   <FontAwesomeIcon icon={faCheck} />
                 </div>
@@ -256,7 +256,7 @@ const PayBillSection = () => {
 
       <div className="box_round_shadow mb_akm">
         <div className="mb_akm flex items-center">
-          <div className="rounded-full border mr-3 h-10 w-10">
+          <div className="rounded-full border mr-3 h-12 w-12">
             <img src="images/logos/nagad.jpg" className=" rounded-full" />
           </div>
           <div>
@@ -266,7 +266,7 @@ const PayBillSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-9">
           <div className="md:col-span-3 lg:col-span-7">
             <div className="flex relative pb-12">
-              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-12 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
               </div>
               <div className="steps_circle_akm">
@@ -285,7 +285,7 @@ const PayBillSection = () => {
             </div>
 
             <div className="flex relative pb-12">
-              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-12 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
               </div>
               <div className="steps_circle_akm">
@@ -305,7 +305,7 @@ const PayBillSection = () => {
             </div>
 
             <div className="flex relative pb-12">
-              <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-12 absolute inset-0 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200 pointer-events-none" />
               </div>
               <div className="steps_circle_akm">
@@ -335,7 +335,7 @@ const PayBillSection = () => {
             </div>
 
             <div className="flex relative">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+              <div className="flex-shrink-0 w-12 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
                 <div className="steps_circle_akm">
                   <FontAwesomeIcon icon={faCheck} />
                 </div>
