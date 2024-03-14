@@ -198,7 +198,10 @@ const PayBillSection = () => {
                 className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50"
               >
                 <div className="relative bg-white w-5/6 sm:w-2/3 md:w-1/4 lg:w-1/5 rounded-2xl">
-                  <div className="absolute z-40 -right-2 -top-3">
+                  <div
+                    className="absolute z-40 -right-2 -top-3"
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     <button className="" onClick={() => closeBkashModal(true)}>
                       <FontAwesomeIcon
                         className="text-4xl  text-white"
@@ -206,7 +209,7 @@ const PayBillSection = () => {
                       />
                     </button>
                   </div>
-                  <div>
+                  <div onClick={(e) => e.stopPropagation()}>
                     <Swiper
                       className="mySwiper rounded-2xl"
                       effect="c"
@@ -375,7 +378,7 @@ const PayBillSection = () => {
                       />
                     </button>
                   </div>
-                  <div>
+                  <div onClick={(e) => e.stopPropagation()}>
                     <Swiper
                       className="mySwiper rounded-2xl"
                       effect="c"
