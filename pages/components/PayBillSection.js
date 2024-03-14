@@ -433,8 +433,8 @@ const PayBillSection = () => {
           <p className="subheading_akm">Other Payment Options</p>
           <p className="body_text_akm">
             Bill payment on Mazeda Networks is doable in all sorts of ways, but
-            for the below payment portals, you need to call our office and
-            confirm our billing team about it.
+            for these payment portals, you need to call our office and confirm
+            our billing team about it.
           </p>
         </div>
         <div className="">
