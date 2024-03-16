@@ -86,6 +86,29 @@ const HeroSection = () => {
         </div>
       </SwiperSlide>
 
+      <SwiperSlide className="bg-secondary ">
+        <div
+          className="bg-cover bg-center relative"
+          style={{
+            backgroundImage: 'url("/images/slider/smart-home.webp")',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent "></div>
+          <div className="container mx-auto sm:px-5 md:px-6 lg:px-4 max-w-7xl text-white h-full h-600 lg:h-600">
+            <div className="flex flex-col justify-end items-center text-white -skew-x-12 ">
+              <div className="text-center font-semibold pt-4 px-3 lg:pt-8 text-2xl sm:text-3xl lg:text-5xl">
+                <p className="skew-x-12">IPv6 Ready</p>
+              </div>
+              <div className="text-center justify-center font-semibold  py-1 px-3 lg:p-3 text-md sm:text-2xl lg:text-3xl">
+                <p className="skew-x-12">
+                  Connect & control your smart devices anywhere from the world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>
+
       <SwiperSlide className="bg-secondary">
         <div
           className="bg-cover bg-center  "
